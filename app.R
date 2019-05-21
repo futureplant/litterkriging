@@ -3,7 +3,7 @@
 library(shiny)
 library(shinydashboard)
 library(leaflet)
-library(chron)
+#library(chron)
 
 source("ui.R",encoding = "Latin1")
 source("scripts/getpoints.R")
@@ -53,7 +53,7 @@ server <- function(input, output, session) {
   
   SliderValues <- reactive({
     minutes <- (getLength(samplepoints)-length(unique(dtf[,2]))) * input$time / input$groups
-    paste0(substr(times((minutes%/%60 +  minutes%%60 /60)/24), 1, 5)," hours" )
+    #paste0(substr(times((minutes%/%60 +  minutes%%60 /60)/24), 1, 5)," hours" )
     
   })
   
