@@ -10,7 +10,4 @@ getCompletes <- function(dtf){
   return((dtf[which(as.numeric(dtf$Point.ID) > 0),2]))
 }
 
-getLength <- function(dtf){
-  return(nrow(dtf))
-}
 

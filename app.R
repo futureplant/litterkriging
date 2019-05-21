@@ -3,6 +3,7 @@
 library(shiny)
 library(shinydashboard)
 library(leaflet)
+library(chron)
 
 source("ui.R",encoding = "Latin1")
 source("scripts/getpoints.R")
@@ -50,6 +51,12 @@ server <- function(input, output, session) {
     markerColor = getColor(samples,samplepoints)
   )
   
+  SliderValues <- reactive({
+    minutes <- (getLength(samplepoints)-length(unique(dtf[,2]))) * input$time / input$groups
+    paste0(substr(times((minutes%/%60 +  minutes%%60 /60)/24), 1, 5)," hours" )
+    
+  })
+  
   # Render background map for shiny app
   output$map <- renderLeaflet({
     
@@ -66,6 +73,11 @@ server <- function(input, output, session) {
     
     })
   
+  output$timeLeft <- renderUI(tags$table(class = "table", tags$thead(tags$th("Time needed:")),
+    tags$tbody(tags$td(as.character(SliderValues())))
+    
+  ))
+  
   # Make table which provides a summary of points to be assessed
   output$overviewTable <- renderUI(
     tags$table(class = "table",
@@ -81,18 +93,15 @@ server <- function(input, output, session) {
                    "lightgreen"
                  ))),
                  tags$td("Completed"),
-                 tags$td(getLength(dtf))
-                 ),
+                 tags$td(length(unique(dtf[,2])
+                 ))),
                  tags$tr(tags$td(span(style = sprintf(
                    "width:1.1em; height:1.1em; background-color:%s; display:inline-block;",
                    "lightblue"
                  ))),
                  tags$td("To be assessed"),
-                 tags$td(getLength(samplepoints)-getLength(dtf))
-                 )
-                 
-               )
-  ))  
+                 tags$td(getLength(samplepoints)-length(unique(dtf[,2]))
+                 )))))  
 }
 
 shinyApp(ui, server)
