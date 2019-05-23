@@ -29,12 +29,7 @@ ui <- dashboardPage(
                     <strong>Green:</strong> Already assessed</p>
                   
                     <br/ ><br/ ></p>"), width = NULL, solidHeader = TRUE
-                        ),
-           box(width = NULL, sliderInput("time", "Time per sample:",
-                                                            min = 0, max = 30,
-                                                            value = 20),
-               sliderInput("groups", "Number of groups:",
-                           min = 1, max = 5, value = 3)), box(width = NULL, tableOutput("timeLeft"))
+                        )
                     )
              )
     )

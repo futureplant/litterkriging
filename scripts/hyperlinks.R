@@ -10,7 +10,7 @@ createFormLinks <- function(dataframe){
   dataframe$formURL <- paste0(
                         
                         '<strong>Point ',
-                        dataframe$OBJECTID,
+                        dataframe$ID,
                         '</strong><br />',
                         '<br /><a href ="',
                         basicMapURL,
@@ -22,7 +22,7 @@ createFormLinks <- function(dataframe){
                        '<a href ="',
                        basicFormURL,
                        "&entry.1104805026=",
-                       dataframe$OBJECTID,
+                       dataframe$ID,
                        "&entry.541960516=",
                        st_coordinates(dataframe)[,'Y'],
                        ",",

@@ -3,8 +3,8 @@
 library(sf)
 
 
-getPoints <- function(){
-  samplepoints <- st_read("data/TestPoints.shp")
+getPoints <- function(path){
+  samplepoints <- st_read(path)
   return (samplepoints)
 }
 

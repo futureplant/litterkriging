@@ -3,7 +3,6 @@
 library(shiny)
 library(shinydashboard)
 library(leaflet)
-#library(chron)
 
 source("ui.R",encoding = "Latin1")
 source("scripts/getpoints.R")
@@ -27,7 +26,8 @@ server <- function(input, output, session) {
   
 
 
-  samplepoints <- getPoints()
+  samplepoints <- getPoints("data/sample_points_wgs84.shp")
+  roads <- getPoints("data/osm_roads_aoi_wgs84.shp")
   completes <- getCompletes(dtf)
 
 
@@ -35,8 +35,8 @@ server <- function(input, output, session) {
 
   
   getColor <- function(samples,samplepoints) {
-    sapply(samplepoints$OBJECTID, function(OBJECTID) {
-      if(OBJECTID %in% completes){
+    sapply(samplepoints$ID, function(ID) {
+      if(ID %in% completes){
         "green"
       } else {
         "blue"
@@ -51,32 +51,27 @@ server <- function(input, output, session) {
     markerColor = getColor(samples,samplepoints)
   )
   
-  SliderValues <- reactive({
-    minutes <- (getLength(samplepoints)-length(unique(dtf[,2]))) * input$time / input$groups
-    #paste0(substr(times((minutes%/%60 +  minutes%%60 /60)/24), 1, 5)," hours" )
-    
-  })
-  
   # Render background map for shiny app
   output$map <- renderLeaflet({
     
     waterlinks <- createFormLinks(samplepoints)
-    # Add default OpenStreetMap map tiles 
-    leaflet(data = waterlinks) %>% setView(lng = 6.6034176,13, lat = 52.0321426, zoom = 13) %>%  
+    # Add default OpenStreetMap map tiles 52.0368481718756,6.64762982247062
+    leaflet(data = waterlinks) %>% setView(lng = 6.647629, lat = 52.0368481, zoom = 13) %>%  
       addTiles() %>% 
       addAwesomeMarkers(
                   icon = icons,
                   popup = ~formURL
                  ) %>%
-      addLabelOnlyMarkers(label =  ~as.character(OBJECTID), 
+      addLabelOnlyMarkers(label =  ~as.character(ID), 
                           labelOptions = labelOptions(noHide = T, direction = 'top', textOnly = T))
     
     })
-  
-  output$timeLeft <- renderUI(tags$table(class = "table", tags$thead(tags$th("Time needed:")),
-    tags$tbody(tags$td(as.character(SliderValues())))
-    
-  ))
+  leafletProxy("map", data = roads) %>%
+
+    addPolylines(
+                color = "red",
+                fillOpacity = 1,
+                weight = 1)
   
   # Make table which provides a summary of points to be assessed
   output$overviewTable <- renderUI(
@@ -93,15 +88,18 @@ server <- function(input, output, session) {
                    "lightgreen"
                  ))),
                  tags$td("Completed"),
-                 tags$td(length(unique(dtf[,2])
-                 ))),
+                 tags$td(getLength(dtf))
+                 ),
                  tags$tr(tags$td(span(style = sprintf(
                    "width:1.1em; height:1.1em; background-color:%s; display:inline-block;",
                    "lightblue"
                  ))),
                  tags$td("To be assessed"),
-                 tags$td(getLength(samplepoints)-length(unique(dtf[,2]))
-                 )))))  
+                 tags$td(getLength(samplepoints)-getLength(dtf))
+                 )
+                 
+               )
+  ))  
 }
 
 shinyApp(ui, server)
