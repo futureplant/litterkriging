@@ -29,7 +29,17 @@ ui <- dashboardPage(
                     <strong>Green:</strong> Already assessed</p>
                   
                     <br/ ><br/ ></p>"), width = NULL, solidHeader = TRUE
-                        )
+                        ),
+           box(width = NULL, sliderInput("sampletime", "Sample time:",
+                           min = 1, max = 30,
+                           value = 20), sliderInput("teams", "Number of teams:",
+                                                    min = 1, max = 5,
+                                                    value = 3))
+           
+           
+           
+           
+           
                     )
              )
     )
