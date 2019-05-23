@@ -58,6 +58,7 @@ server <- function(input, output, session) {
     time <- input$sampletime
     groups <- input$teams
     mins <- (totalpoints - donepoints)*time/groups
+    paste(floor(mins/60), " hours ", round(mins%%60), " minutes needed")
   })
   
   output$selected_var <- renderText(sliderValues())
