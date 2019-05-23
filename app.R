@@ -57,9 +57,10 @@ server <- function(input, output, session) {
   sliderValues <- reactive({
     time <- input$sampletime
     groups <- input$teams
+    mins <- (totalpoints - donepoints)*time/groups
   })
   
-  output$selected_var <- renderText("This is a test")
+  output$selected_var <- renderText(sliderValues())
   
   # Render background map for shiny app
   output$map <- renderLeaflet({
