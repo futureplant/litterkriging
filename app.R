@@ -51,6 +51,16 @@ server <- function(input, output, session) {
     markerColor = getColor(samples,samplepoints)
   )
   
+  totalpoints <- nrow(samplepoints)
+  donepoints <- nrow(dtf)
+  
+  sliderValues <- reactive({
+    time <- input$sampletime
+    groups <- input$teams
+  })
+  
+  output$selected_var <- renderText("This is a test")
+  
   # Render background map for shiny app
   output$map <- renderLeaflet({
     

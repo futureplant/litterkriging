@@ -34,11 +34,7 @@ ui <- dashboardPage(
                            min = 1, max = 30,
                            value = 20), sliderInput("teams", "Number of teams:",
                                                     min = 1, max = 5,
-                                                    value = 3))
-           
-           
-           
-           
+                                                    value = 3), textOutput("selected_var"))
            
                     )
              )
