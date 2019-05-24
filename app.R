@@ -26,7 +26,7 @@ server <- function(input, output, session) {
   
 
 
-  samplepoints <- getPoints("data/sample_points_wgs84.shp")
+  samplepoints <- getPoints("data/allpoints.shp")
   roads <- getPoints("data/osm_roads_aoi_wgs84.shp")
   completes <- getCompletes(dtf)
 

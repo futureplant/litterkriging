@@ -28,7 +28,7 @@ ui <- dashboardPage(
                     <strong> Blue:</strong> Still needs assessment<br/ >
                     <strong>Green:</strong> Already assessed</p>
                   
-                    <br/ ><br/ ></p>"), width = NULL, solidHeader = TRUE
+                    <br/ ><br/ ></p>"),checkboxInput("hidevalidation", "Hide validation points", FALSE), width = NULL, solidHeader = TRUE
                         ),
            box(width = NULL, sliderInput("sampletime", "Sample time:",
                            min = 1, max = 30,
