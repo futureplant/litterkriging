@@ -8,6 +8,7 @@ source("ui.R",encoding = "Latin1")
 source("scripts/getpoints.R")
 source("scripts/hyperlinks.R")
 source("scripts/readgsheets.R",encoding = "Latin1")
+source("scripts/getdataframe.R")
 
 
 
@@ -19,13 +20,8 @@ server <- function(input, output, session) {
 
   
   # url of gsheet which contains form answers
-  url <- 'https://docs.google.com/spreadsheets/d/1Dn96ArmKeIu-lnDSUHzAKnGcJv7Kjmqii_H-Y-zVd74/edit?usp=sharing'
-  # creates dataframe from google sheet answers
-  dtf <- read.csv(text=gsheet2text(url, format='csv'), stringsAsFactors=FALSE,fileEncoding = "UTF-8",encoding = "UTF-8")
-  
-  
-
-
+  dtf <- getDataFrame('https://docs.google.com/spreadsheets/d/1Dn96ArmKeIu-lnDSUHzAKnGcJv7Kjmqii_H-Y-zVd74/edit?usp=sharing')
+ 
   samplepoints <- getPoints("data/allpoints.shp")
   roads <- getPoints("data/osm_roads_aoi_wgs84.shp")
   completes <- getCompletes(dtf)
