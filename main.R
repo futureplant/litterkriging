@@ -22,8 +22,12 @@ plot(roads, add=T)
 
 # create dummy data
 allpoints <- getPoints("data/allpoints.shp")
-allpoints$litter <- floor(runif(134, min=0, max = 10))
+allpoints$litter1 <- floor(runif(134, min=0, max =10))
+allpoints$litter2 <- floor(runif(134, min=0, max =5))
 dummydata <- as(allpoints,'Spatial')
+
+plot(dummydata)
+plot(roads, add=T)
 
 # Turn data into spatial object (sp)
 
