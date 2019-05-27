@@ -1,4 +1,7 @@
+# Code to merge sample points and validation dataset
+
 source("scripts/getpoints.R")
+
 validation <- getPoints("data/validation_points_wgs84.shp")
 samples    <- getPoints("data/sample_points_wgs84.shp") 
 samples <- samples[,c(1,4)]
