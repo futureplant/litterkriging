@@ -7,16 +7,18 @@ source('scripts/getpoints.R')
 
 
 # Get data from google sheets
-  # temporarily simulated data
 sampledata <- getDataFrame('https://docs.google.com/spreadsheets/d/1Dn96ArmKeIu-lnDSUHzAKnGcJv7Kjmqii_H-Y-zVd74/edit?usp=sharing')
-#points = SpatialPoints(sampledata$Coordinates, proj4string="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs", bbox = NULL)
-
-sampledata$Coordinates
 sampledata$lon <- as.numeric(sub(".*,", "", sampledata$Coordinates))
 sampledata$lat <- as.numeric(sub(",.*", "", sampledata$Coordinates))
+
+# turn data frame into sp object
 coordinates(sampledata) <- ~lon+lat
 proj4string(sampledata) <- "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
+
+# visual check if all points are on road network
 roads <- getPoints("data/osm_roads_aoi_wgs84.shp")
+plot(sampledata)
+plot(roads, add=T)
 
 
 # Turn data into spatial object (sp)
