@@ -1,4 +1,6 @@
 library(sp)
+library(gstat)
+library(raster)
 source('scripts/getdataframe.R')
 source('scripts/getpoints.R')
 
@@ -33,21 +35,46 @@ plot(roads, add=T)
 
 
 
+# Exploratory analysis
+hist(dummydata$litter1)
+summary(dummydata)
+
 
 # Make semivariogram
+glitter <- gstat(formula = litter1 ~ 1, data = dummydata)
 
+vglitter <- variogram(glitter)
+plot(vglitter)
 
+vgmlitter <- vgm(nugget = 7, psill = 8, range = 0.1, model = 'Sph')
+vgmlitter <- fit.variogram(vglitter, vgmlitter)
+
+plot(vglitter, vgmlitter)
+attr(vgmlitter, 'SSErr')
 
 
 # Export semivariogram to png
 
 
 
-
 # Perform Kriging (euclidian or linear network)
+  # cross-validation
+litter_cv <- krige.cv(formula = litter1 ~ 1, locations = dummydata, vgmlitter)
+plot(litter_cv$residual)
+bubble(litter_cv, zcol = 'residual')
+mean(litter_cv$zscore)
+sd(litter_cv$zscore)
 
+  # get roadnetwork raster
+roadnetwork <- raster('data/a04_osm_roads_buffer_raster_wgs84.tif')
+roadnetwork[roadnetwork == -9999] <- NA
+roadnetwork <- as(roadnetwork, 'SpatialGridDataFrame')
 
+  # ordinary kriging
+litter_krig = krige(litter1 ~ 1, locations = dummydata, newdata = roadnetwork, model = vgmlitter, nmax = 15)
 
+spplot(litter_krig['var1.pred'])
+spplot(litter_krig['var1.var'], sp.layout = list('sp.points', dummydata, col = 'black'))
 
 # (optional) Clip Raster on buffered roads
 
