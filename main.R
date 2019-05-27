@@ -20,6 +20,10 @@ roads <- getPoints("data/osm_roads_aoi_wgs84.shp")
 plot(sampledata)
 plot(roads, add=T)
 
+# create dummy data
+allpoints <- getPoints("data/allpoints.shp")
+allpoints$litter <- floor(runif(134, min=0, max = 10))
+dummydata <- as(allpoints,'Spatial')
 
 # Turn data into spatial object (sp)
 
