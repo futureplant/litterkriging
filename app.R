@@ -34,11 +34,14 @@ server <- function(input, output, session) {
     sapply(samplepoints$ID, function(ID) {
       if(ID %in% completes){
         "green"
+      } else if(ID >= 200){
+        "orange"
       } else {
         "blue"
       } 
       })
   }
+  
   
   icons <- awesomeIcons(
     icon = 'square',
@@ -74,12 +77,7 @@ server <- function(input, output, session) {
                           labelOptions = labelOptions(noHide = T, direction = 'top', textOnly = T))
     
     })
-  leafletProxy("map", data = roads) %>%
-
-    addPolylines(
-                color = "red",
-                fillOpacity = 1,
-                weight = 1)
+  
   
   # Make table which provides a summary of points to be assessed
   output$overviewTable <- renderUI(
