@@ -2,6 +2,7 @@ library(sp)
 library(gstat)
 library(raster)
 library(gsheet)
+library(stars)
 source('scripts/getdataframe.R')
 source('scripts/getpoints.R')
 
@@ -73,6 +74,9 @@ sd(litter_cv$zscore)
 roadnetwork <- raster('data/a04_osm_roads_buffer_raster_wgs84.tif')
 roadnetwork[roadnetwork == -9999] <- NA
 roadnetwork <- as(roadnetwork, 'SpatialGridDataFrame')
+
+roadnetwork <- projectRaster(roadnetwork, crs = 28992)
+
 
   # ordinary kriging
 litter_krig = krige(total ~ 1, locations = sampledata_low, newdata = roadnetwork, model = vgmlitter, nmax = 15)
