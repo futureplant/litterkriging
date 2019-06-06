@@ -1,6 +1,7 @@
 library(sp)
 library(gstat)
 library(raster)
+library(gsheet)
 source('scripts/getdataframe.R')
 source('scripts/getpoints.R')
 
@@ -23,30 +24,33 @@ plot(sampledata)
 plot(roads, add=T)
 
 # create dummy data
-allpoints <- getPoints("data/allpoints.shp")
-allpoints$litter1 <- floor(runif(134, min=0, max =10))
-allpoints$litter2 <- floor(runif(134, min=0, max =5))
-dummydata <- as(allpoints,'Spatial')
+# allpoints <- getPoints("data/allpoints.shp")
+# allpoints$litter1 <- floor(runif(134, min=0, max =10))
+# allpoints$litter2 <- floor(runif(134, min=0, max =5))
+# dummydata <- as(allpoints,'Spatial')
+# 
+# plot(dummydata)
+# plot(roads, add=T)
 
-plot(dummydata)
-plot(roads, add=T)
-
-# Turn data into spatial object (sp)
-
+# Turn data into spatial object (sf)
+sampledata <- st_as_sf(sampledata)
+sampledata <- st_transform(sampledata, crs =28992)
 
 
 # Exploratory analysis
-hist(dummydata$litter1)
-summary(dummydata)
+hist(sampledata$total, breaks = c(0,0.5,1,2,3,4,5,6,7,8,9,10,20,30,40,50))
+summary(sampledata)
 
+# Without 119
+sampledata_low <- sampledata[-119,]
 
 # Make semivariogram
-glitter <- gstat(formula = litter1 ~ 1, data = dummydata)
+glitter <- gstat(formula = total ~ 1, data = sampledata_low)
 
-vglitter <- variogram(glitter)
-plot(vglitter)
+vglitter <- variogram(glitter, boundaries = c(25, 60, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1100))
+plot(vglitter, plot.numbers = T)
 
-vgmlitter <- vgm(nugget = 7, psill = 8, range = 0.1, model = 'Sph')
+vgmlitter <- vgm(nugget = 1.5, psill = 7.5, range = 400, model = 'Exp')
 vgmlitter <- fit.variogram(vglitter, vgmlitter)
 
 plot(vglitter, vgmlitter)
@@ -59,7 +63,7 @@ attr(vgmlitter, 'SSErr')
 
 # Perform Kriging (euclidian or linear network)
   # cross-validation
-litter_cv <- krige.cv(formula = litter1 ~ 1, locations = dummydata, vgmlitter)
+litter_cv <- krige.cv(formula = total ~ 1, locations = sampledata_low, vgmlitter, nmax = 15)
 plot(litter_cv$residual)
 bubble(litter_cv, zcol = 'residual')
 mean(litter_cv$zscore)
@@ -71,7 +75,7 @@ roadnetwork[roadnetwork == -9999] <- NA
 roadnetwork <- as(roadnetwork, 'SpatialGridDataFrame')
 
   # ordinary kriging
-litter_krig = krige(litter1 ~ 1, locations = dummydata, newdata = roadnetwork, model = vgmlitter, nmax = 15)
+litter_krig = krige(total ~ 1, locations = sampledata_low, newdata = roadnetwork, model = vgmlitter, nmax = 15)
 
 spplot(litter_krig['var1.pred'])
 spplot(litter_krig['var1.var'], sp.layout = list('sp.points', dummydata, col = 'black'))
