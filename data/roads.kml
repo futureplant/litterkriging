@@ -1,0 +1,2671 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="roads" id="roads">
+	<SimpleField name="osm_id" type="string"></SimpleField>
+	<SimpleField name="code" type="int"></SimpleField>
+	<SimpleField name="fclass" type="string"></SimpleField>
+	<SimpleField name="ref" type="string"></SimpleField>
+	<SimpleField name="oneway" type="string"></SimpleField>
+	<SimpleField name="maxspeed" type="int"></SimpleField>
+	<SimpleField name="layer" type="float"></SimpleField>
+	<SimpleField name="bridge" type="string"></SimpleField>
+	<SimpleField name="tunnel" type="string"></SimpleField>
+</Schema>
+<Folder><name>roads</name>
+  <Placemark>
+	<name>Klaverdijk</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6686038</SimpleData>
+		<SimpleData name="code">5115</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6518672,52.0321362 6.6518947,52.0322065 6.6542788,52.0336321 6.6575118,52.0355265</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Banningweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6686039</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">30</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6526226,52.0319737 6.6527739,52.0319974 6.6543213,52.0320138 6.65657,52.03207 6.6566795,52.0320746</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Tichelovenweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6686041</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6501534,52.0417229 6.6502642,52.0417173 6.6510639,52.0418557 6.651094,52.0418609 6.6561568,52.0427012 6.6561683,52.0427031 6.6565212,52.0427595</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Schoolweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6686202</SimpleData>
+		<SimpleData name="code">5142</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6561568,52.0427012 6.6578086,52.0459911</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Topsweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6686216</SimpleData>
+		<SimpleData name="code">5142</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6575118,52.0355265 6.65607,52.0358 6.65492,52.03603 6.65385,52.03627 6.6527054,52.0365247 6.65215,52.03668 6.6518121,52.0368188 6.65165,52.03695 6.651344,52.0373016 6.6511995,52.0374113 6.6510274,52.0374775 6.6507785,52.0375077 6.6503821,52.0374964 6.6498565,52.037468 6.6492388,52.0375058 6.6483222,52.0375202</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Zwolse Veenweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6686442</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6578086,52.0459911 6.6529186,52.0461524 6.6524514,52.0461989 6.6500543,52.0466507</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Zwolse Veenweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6686444</SimpleData>
+		<SimpleData name="code">5142</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.66077952591287,52.0458955911541 6.6596757,52.0459377 6.6578086,52.0459911</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Tichelovenweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6686445</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.66291683123367,52.043000724081 6.66184,52.04308</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Tichelovenweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6686446</SimpleData>
+		<SimpleData name="code">5142</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6565212,52.0427595 6.6594145,52.043238 6.6598059,52.0432609 6.66184,52.04308</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Hegemansweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6686511</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.65929,52.03659 6.66384,52.03696 6.66493348538451,52.037036410676</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Meddoseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6686589</SimpleData>
+		<SimpleData name="code">5115</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.65628417567562,52.0272501672692 6.6562779,52.0272524 6.6560532,52.0273628 6.6559251,52.0274404 6.6557831,52.027552 6.6554914,52.0278224 6.6552174,52.0280905 6.6550834,52.0282324 6.654971,52.028384</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Klaverdijk</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6686598</SimpleData>
+		<SimpleData name="code">5115</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.65929,52.03659 6.6622156,52.039625 6.6625107,52.039938 6.66400671984498,52.0415245275714</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Klaverdijk</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6686620</SimpleData>
+		<SimpleData name="code">5115</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6575118,52.0355265 6.65902,52.03639 6.65929,52.03659</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>De Horst</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690456</SimpleData>
+		<SimpleData name="code">5122</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">30</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6283841,52.0325051 6.6282222,52.0326909 6.6281883,52.0327766</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>De Horst</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690574</SimpleData>
+		<SimpleData name="code">5122</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">30</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6285115,52.0335513 6.6287888,52.033858 6.6288356,52.033907</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>De Horst</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690635</SimpleData>
+		<SimpleData name="code">5122</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">30</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.62909,52.03316 6.628853,52.0331664</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Elshofweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690639</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6319664,52.0328097 6.6319414,52.0329192 6.6319164,52.0333623 6.6318754,52.0336872 6.6317354,52.0343437 6.6315959,52.0347934 6.6315118,52.0350796 6.6314969,52.0351316 6.631378,52.0355243 6.6313227,52.0358355</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>De Horst</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690747</SimpleData>
+		<SimpleData name="code">5122</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">30</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6281883,52.0327766 6.6281106,52.032842 6.627761,52.0332159 6.6277636,52.033287 6.6280303,52.0335594 6.6281439,52.0336032 6.6283395,52.033605 6.6285115,52.0335513 6.6285629,52.0335085 6.6285892,52.0334538 6.6288462,52.0331869 6.628853,52.0331664 6.6288603,52.0331454 6.6288407,52.0330623 6.6283754,52.0328084 6.6281883,52.0327766</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Lange Maat</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690825</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6406248,52.0261512 6.6405341,52.0260904 6.6404171,52.0260284 6.6401005,52.0258199 6.6399875,52.0257678 6.6399109,52.0257517 6.6398342,52.0257603 6.6397516,52.0257814 6.6396648,52.0258137 6.6388126,52.026278 6.6387452,52.026284 6.6386465,52.0262528 6.6384924,52.0261642 6.6379661,52.0258728 6.6378941,52.0258658 6.6377799,52.0258866 6.6376578,52.0259589 6.6374881,52.02619 6.6363661,52.0274702 6.6362418,52.0276364 6.6361415,52.0277967 6.6360736,52.0279774 6.6357522,52.0289309 6.6354316,52.0298453</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690828</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6465036,52.0298629 6.646566,52.0298923 6.6466195,52.0299212 6.646721,52.0299878 6.6468079,52.0300573 6.6468905,52.0301402 6.6469503,52.0302164 6.6470242,52.0303664 6.6470775,52.0304867 6.6474411,52.0314389 6.6475256,52.0316572 6.6475625,52.031747 6.6476209,52.0318321 6.6477085,52.0319465</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Klaverdijk</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690831</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6542045,52.0295808 6.65456,52.02993 6.65501,52.03033</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Meddoseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690838</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6477085,52.0319465 6.6477746,52.0319786 6.647856,52.0320089 6.6479759,52.0320344 6.6481899,52.0320553</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Marhulzenweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690839</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">1</SimpleData>
+		<SimpleData name="bridge">T</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6311264,52.0405434 6.6314076,52.0406901</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Marhulzenweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690842</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6311264,52.0405434 6.6310934,52.0405247 6.6310159,52.0405007 6.6309315,52.0404963 6.6308153,52.0405298 6.63078,52.04054 6.6306115,52.0407562 6.6302648,52.0411025 6.6296188,52.0418321 6.6294278,52.0420438 6.6292527,52.0421492 6.62913,52.04218 6.6283241,52.0421589 6.6277128,52.0421555 6.6275596,52.0421644 6.6274673,52.0421697 6.6272595,52.0422293 6.6271215,52.0423123 6.6270486,52.0424129 6.626954,52.0426358 6.6267702,52.0431839 6.6266426,52.043589</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Zwolseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690843</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.63214703326356,52.0276870694248 6.6322678,52.0278083 6.6326277,52.0280358 6.63463,52.02935 6.6354316,52.0298453</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690845</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">1</SimpleData>
+		<SimpleData name="bridge">T</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6453796,52.0298083 6.6448724,52.0298552</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Boerijendijk</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690853</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6477085,52.0319465 6.6476808,52.032007 6.6476824,52.0320505 6.6477577,52.03237</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Braakweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690864</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.647459,52.0457257 6.648186,52.0459862 6.6486482,52.0461518 6.6500543,52.0466507</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Marhulzenpad</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690869</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6426614,52.0422045 6.6426942,52.04226 6.6427923,52.0423557 6.644024,52.0434083 6.6441038,52.0435592 6.6441316,52.0436435 6.6442981,52.0438171 6.6448887,52.0443206 6.6452941,52.0446588 6.6454435,52.0447738 6.6456878,52.0449393 6.6459113,52.0450908 6.6461931,52.045253 6.6464134,52.0453468 6.647459,52.0457257</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Marhulzenweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690872</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6314076,52.0406901 6.6314267,52.0407011</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690880</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6448149,52.0298626 6.6448724,52.0298552</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690888</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6355275,52.0314866 6.6333381,52.0322965 6.6329721,52.0324318</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690896</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6369553,52.0310075 6.6367815,52.0310479 6.6366134,52.0310949 6.636501,52.0311349 6.6355275,52.0314866</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690900</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6448149,52.0298626 6.6440002,52.0299377 6.6436047,52.0299952 6.6433592,52.030038 6.641888,52.030304 6.6407928,52.0304698 6.6386915,52.0307538 6.6369553,52.0310075</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Zwolseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690902</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6354316,52.0298453 6.6368639,52.030798 6.6369204,52.0308768 6.6369393,52.0309476</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Marhulzen</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690905</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6382996,52.0454766 6.63935,52.04639 6.63959,52.04654 6.64024,52.04666 6.6429655,52.0470633 6.6432653,52.0471293 6.6433777,52.0472558</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Braakweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690915</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6500543,52.0466507 6.65112594028307,52.0473729807282</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690918</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">50</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6267449,52.0349956 6.62667840334379,52.0350346829224</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Marhulzenpad</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690924</SimpleData>
+		<SimpleData name="code">5141</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6426614,52.0422045 6.642496,52.0422439</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690927</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">50</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6288356,52.033907 6.6286074,52.033993 6.6284229,52.0340729 6.6267449,52.0349956</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690935</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">50</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6319664,52.0328097 6.6303749,52.0333923 6.6290974,52.0338173 6.6288356,52.033907</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690946</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">50</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6322236,52.0327083 6.6319664,52.0328097</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Boerijendijk</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690955</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6433777,52.0472558 6.6432025,52.0473037 6.643098,52.0473604 6.6429843,52.0474455 6.64271422422391,52.0476686674653</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Boerijendijk</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690961</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.647459,52.0457257 6.64536,52.04708 6.6449604,52.0472319 6.6448036,52.0472527 6.6445578,52.0472546 6.644232,52.0472451 6.64398,52.0472262 6.6437495,52.0472111 6.6435621,52.0472225 6.6433777,52.0472558</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Meddoseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690965</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6481899,52.0320553 6.6480081,52.0321412 6.6478683,52.0322414 6.6477577,52.03237</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Boerijendijk</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690976</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6501534,52.0417229 6.6501774,52.0418376 6.6501622,52.0419352 6.6501491,52.0420328 6.6500942,52.0421498 6.65008,52.04218 6.6492127,52.0435283 6.648968,52.0439178 6.6489629,52.0439258 6.6482489,52.0450443 6.6481229,52.0451993 6.6479754,52.0453448 6.647791,52.0454998 6.647459,52.0457257</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Boerijendijk</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690990</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6483222,52.0375202 6.6482851,52.0376776 6.6481253,52.0380632 6.6479286,52.038481 6.647901,52.0386209 6.6478948,52.0387475 6.6479286,52.0389233 6.6480055,52.0391029 6.6482175,52.0393997 6.6487553,52.0400311 6.6493121,52.0406932 6.650043,52.0415622 6.6501227,52.0416635 6.6501534,52.0417229</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Boerijendijk</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6690997</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6477577,52.03237 6.6477485,52.0324778 6.6475748,52.0334458 6.6475364,52.0335498 6.6474765,52.0336689 6.6473597,52.0338258 6.6472783,52.0339288 6.6468634,52.0343589 6.64677,52.03446 6.64629,52.03495 6.64556,52.03574 6.64548,52.03588 6.64549,52.03605 6.64555,52.03615 6.64579,52.03631 6.6459495,52.0363731 6.6462107,52.0364563 6.6477719,52.0368874 6.6479378,52.0369705 6.6481038,52.0370972 6.6482298,52.0372314 6.648282,52.0373638 6.6483222,52.0375202</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Meddoseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6691013</SimpleData>
+		<SimpleData name="code">5115</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">30</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6544193,52.0292399 6.6542045,52.0295808 6.6539615,52.0297862 6.6532913,52.0303549 6.6530915,52.0305459 6.6530239,52.0306518 6.6529693,52.030756 6.6529163,52.0309172 6.6528938,52.0310559 6.6527719,52.0317427 6.6526965,52.0319122 6.6526226,52.0319737</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Meddoseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6691014</SimpleData>
+		<SimpleData name="code">5115</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">30</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6526226,52.0319737 6.6523497,52.0320681 6.6521284,52.0321173 6.6518672,52.0321362</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Meddoseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">6691016</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6481899,52.0320553 6.6518672,52.0321362</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">58630464</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6320841,52.0373064 6.6310251,52.0375535 6.6307815,52.0377716</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">58630466</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6308251,52.0383589 6.6296522,52.0389987 6.629171,52.0392617 6.6290229,52.0393011 6.6288443,52.0392133</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">58630468</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6297583,52.0380557 6.6296074,52.0379839 6.6293886,52.037935</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Marhulzenpad</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">58658320</SimpleData>
+		<SimpleData name="code">5152</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6314267,52.0407011 6.6314792,52.0406812 6.6315677,52.0405986 6.6317268,52.0404707 6.6321567,52.0401455 6.6324829,52.0399116 6.6329431,52.0396224 6.6334122,52.0393451 6.6345075,52.0387839 6.6349194,52.0385816 6.6350095,52.0385477</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">58658323</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">1</SimpleData>
+		<SimpleData name="bridge">T</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6351038,52.0384196 6.6347491,52.0383796</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">58658327</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6346918,52.0383696 6.6343912,52.0383297 6.634198,52.0383041 6.6336123,52.0382164</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">58658328</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6310934,52.0405247 6.6312825,52.0404125 6.6323491,52.0396583 6.6329624,52.0392814 6.6336952,52.0388773 6.6346918,52.0383696</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">58658330</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6347491,52.0383796 6.6346918,52.0383696</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">58658331</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6292886,52.0431922 6.629567,52.0426865 6.6297953,52.042352 6.6302111,52.0418302 6.6305007,52.0415014 6.6309536,52.0410264 6.6312301,52.0407753 6.6314267,52.0407011</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">58658334</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6294905,52.0378401 6.6290029,52.037662 6.62884733187892,52.0376548070089</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">80338919</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6352668,52.0385345 6.6351972,52.0384862 6.6351418,52.038425</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">118334177</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6497599,52.0288554 6.6481533,52.0311146 6.648223,52.0311591 6.6509637,52.0310565 6.6516611,52.0310169 6.6521063,52.0309657 6.6524845,52.0308865 6.6529693,52.030756</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Reirinckspad</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">118334178</SimpleData>
+		<SimpleData name="code">5152</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.654971,52.028384 6.654624,52.0283488 6.6539383,52.0283402 6.6532173,52.0283091 6.6527018,52.0282577 6.6524792,52.0282428 6.6523424,52.0282494 6.6518199,52.0284544 6.651675,52.0284989 6.6514846,52.0285154 6.6511332,52.0284973 6.6505136,52.0284263 6.6500603,52.028357 6.6497599,52.0288554 6.6496661,52.0289049 6.6479736,52.0295683 6.6477241,52.0296426 6.6473889,52.0297102 6.6468417,52.0298076 6.6465036,52.0298629</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Klaverdijk</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">118334561</SimpleData>
+		<SimpleData name="code">5142</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.65501,52.03033 6.6560465,52.0312462 6.6562289,52.0314327 6.6563925,52.0316192 6.656666,52.0320533 6.6566795,52.0320746 6.6589621,52.0360233 6.65929,52.03659</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">118335488</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6637713,52.0309509 6.6635781,52.0309013 6.6622639,52.0312413 6.6603809,52.0315251 6.6602093,52.0316373 6.6592812,52.0317825 6.6586053,52.0320433 6.6584605,52.0320631 6.656666,52.0320533</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Schoolweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">118335784</SimpleData>
+		<SimpleData name="code">5142</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6578086,52.0459911 6.65825,52.04677 6.65840696239197,52.0470683398656</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Zwolse Veenweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">118335928</SimpleData>
+		<SimpleData name="code">5142</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6500543,52.0466507 6.6490835,52.0468262 6.6481823,52.0468856 6.645602,52.0472485 6.6452694,52.0472914 6.6450763,52.0472749 6.6449604,52.0472319</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Marhulzenpad</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">123264522</SimpleData>
+		<SimpleData name="code">5152</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6350095,52.0385477 6.6351119,52.0385059 6.6351475,52.038474 6.6351418,52.038425 6.6351038,52.0384196</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Marhulzenweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">123264524</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6314267,52.0407011 6.6317,52.04087 6.63283,52.04148</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">197370006</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6269589,52.0432376 6.6270228,52.0433039 6.6270274,52.0434847 6.6271227,52.0435444 6.6275389,52.0436141 6.6276118,52.0436418 6.6280629,52.0441695 6.6277196,52.0448855</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">197678418</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6308025,52.0391605 6.6311174,52.039248 6.631209,52.0392734 6.631487,52.0393602 6.6315494,52.039375</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">197678419</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6308251,52.0383589 6.630748,52.0382977 6.6306639,52.0382386 6.6306078,52.0381562 6.630567,52.0380962 6.6305246,52.0380086 6.6307815,52.0377716</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">197678420</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6308251,52.0383589 6.6308485,52.0384309 6.6308743,52.0385629 6.6308695,52.0385962 6.6308537,52.0387065 6.6308117,52.0390329 6.6308025,52.0391605 6.630771,52.0393128 6.6307102,52.0394369 6.630501,52.0397239 6.6304627,52.0397862 6.6304419,52.0398295 6.6306479,52.0402146 6.6307079,52.0403267</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">197678421</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6315494,52.039375 6.6315745,52.0394517 6.6315721,52.0395061 6.6314944,52.03961 6.631306,52.0398182</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">197678422</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.63269,52.0380353 6.6330891,52.0379377 6.6336547,52.0377481 6.6338319,52.0376779 6.6339557,52.0376241 6.6340722,52.0375898 6.6341451,52.0375898 6.6342179,52.0376017 6.6345565,52.0377837 6.6352042,52.0374147 6.6358099,52.0370701</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">197678423</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6288443,52.0392133 6.6290841,52.0387018 6.629143,52.0385694 6.6292014,52.0384383 6.6293886,52.037935 6.6294905,52.0378401 6.6296502,52.0378223 6.6305085,52.0377821 6.6307815,52.0377716</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">197678424</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.631611,52.0362657 6.6317284,52.0363002</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">197678425</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6321355,52.0372107 6.6324536,52.0373184 6.6326447,52.0372673 6.6335864,52.0365795</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">197678426</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6314343,52.0360212 6.6314505,52.0361254 6.631611,52.0362657 6.6316015,52.036424 6.6319256,52.0368972 6.6321355,52.0372107 6.6320841,52.0373064</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">197678427</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6294291,52.0386364 6.6294842,52.0385983 6.6296914,52.0381214 6.6297583,52.0380557 6.6299026,52.0380317 6.6305246,52.0380086</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">197678429</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.629097,52.0405019 6.6291759,52.0403476 6.6292378,52.0402585 6.6294626,52.0401079 6.6297927,52.0399612 6.6301107,52.0398265 6.6303146,52.0397877 6.6304627,52.0397862</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">197678430</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6320841,52.0373064 6.6321425,52.0373992 6.6321881,52.0374702 6.6325708,52.0379901 6.63269,52.0380353 6.6327729,52.0380643 6.6336123,52.0382164</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">197678431</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6307079,52.0403267 6.6308153,52.0405298</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Noaberpad</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">263209431</SimpleData>
+		<SimpleData name="code">5153</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6448369,52.0298003 6.6448149,52.0298626 6.6447871,52.0299438 6.6447626,52.0299946 6.6437419,52.0309411 6.6424223,52.0323471 6.6418809,52.0328912 6.6403731,52.0344064 6.6399278,52.0348734 6.6393941,52.0354063 6.6387611,52.0359937 6.6384714,52.0362478 6.6375568,52.0368633 6.6365161,52.0374556 6.6362774,52.0375926 6.6360816,52.0376817 6.6358621,52.0377799 6.6354915,52.0379457 6.6350577,52.0381754 6.6346918,52.0383696</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">263774430</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6320924,52.038897 6.6319309,52.0391038 6.6318131,52.0391314 6.6315736,52.0391442</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Meddoseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">276175372</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6557831,52.027552 6.6526097,52.0263357</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">319292406</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6318153,52.0360414 6.6319486,52.035866 6.6321761,52.0355666</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">319292407</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6316679,52.0360148 6.6317716,52.035836 6.6319324,52.0355588</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">319292408</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6316693,52.0358619 6.631586,52.0357137 6.6316778,52.0355335</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">319292409</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6315561,52.035892 6.6316693,52.0358619 6.6317716,52.035836 6.6319486,52.035866 6.6322948,52.0359262 6.6323504,52.0359299 6.6326739,52.0359515 6.6325229,52.0357303 6.6323504,52.0359299</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322558698</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.626627,52.0349628 6.6269291,52.0348055 6.6270368,52.0347546 6.6276945,52.0343879 6.6279878,52.0342279 6.6282396,52.0340905 6.6285018,52.0339695 6.6287888,52.033858 6.6290841,52.0337577 6.6296935,52.033564 6.6303319,52.033343 6.6312544,52.032998 6.6319553,52.0327279 6.6322172,52.0326362</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322558699</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6319664,52.0328097 6.6318242,52.0329016 6.6314594,52.0330393 6.6312946,52.0331079 6.6312448,52.0331438 6.6311604,52.0331745 6.6306695,52.0333519 6.6301648,52.0335325 6.6299348,52.0336127 6.6296367,52.0337083 6.6291148,52.0338793 6.6288775,52.0339633 6.6285881,52.0340682 6.6284181,52.0341474 6.626957,52.0349546 6.6268523,52.0349895 6.6267449,52.0349956</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322558700</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6288775,52.0339633 6.6288356,52.033907</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322558701</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.62658326694422,52.0349864261144 6.626627,52.0349628</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322558702</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6319553,52.0327279 6.6319664,52.0328097</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322558703</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6322172,52.0326362 6.6322078,52.032676 6.6322236,52.0327083</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322558705</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6322172,52.0326362 6.633272,52.0322536 6.6354271,52.0314623 6.6354632,52.031458</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322558706</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6313944,52.0319191 6.6318493,52.0321134 6.6318871,52.0321619 6.631918,52.0322327 6.6319248,52.0322844 6.6319553,52.0327279</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322558707</SimpleData>
+		<SimpleData name="code">5141</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6355275,52.0314866 6.635641,52.0316208 6.6356581,52.0316609 6.6356564,52.0316842 6.6356513,52.0317122 6.6356547,52.0317438 6.6356702,52.0317755 6.6356958,52.0318 6.6357407,52.0318187 6.6358232,52.0318396 6.6374867,52.0321819 6.6375848,52.0322078 6.6376947,52.0322489 6.6377513,52.0322785 6.6377556,52.0322831 6.6378045,52.0323355 6.6378543,52.0326787</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562950</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6347378,52.0359036 6.6348713,52.0357109 6.6349514,52.0356915 6.6350509,52.0357065 6.6357622,52.0358394 6.6358544,52.0358453 6.6359806,52.0358334 6.636102,52.0358065 6.6364079,52.0357259 6.6366239,52.03569 6.6368351,52.0356736</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562951</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6335864,52.0365795 6.6338568,52.0363581 6.6340113,52.0362272 6.6341726,52.0361195 6.6342173,52.0360582 6.6342984,52.0358752 6.6343786,52.0357034 6.63477,52.0352747 6.634897,52.0351438 6.6349622,52.0350192 6.6351236,52.0346918</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562952</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6293895,52.0367888 6.6297585,52.0367485 6.6298604,52.0367395 6.629943,52.0367485 6.6300109,52.0367918 6.6301857,52.0369605 6.630193,52.0370098 6.6301833,52.0370576 6.6301372,52.0371516 6.6300741,52.0371696 6.629824,52.0371949 6.6294915,52.0372144</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562953</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6308117,52.0390329 6.6302087,52.0393646 6.6301726,52.0393741 6.6300799,52.0393361 6.6300233,52.039315 6.6299804,52.0392865 6.6299649,52.0392527 6.6299769,52.0392052 6.6299993,52.0391725 6.6300559,52.039144 6.6302121,52.0390637 6.630382,52.0389814 6.6305503,52.0388832 6.6308537,52.0387065</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562954</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.630567,52.0380962 6.6307421,52.038112 6.6308365,52.0381078 6.6308828,52.0380898 6.6310425,52.0379652 6.6312965,52.037735 6.6315935,52.037848 6.6316038,52.037867 6.6315918,52.0378881 6.631427,52.0380497 6.6312879,52.0381416 6.6310562,52.0382577 6.6309258,52.0383211 6.6308251,52.0383589</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562955</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6391101,52.0350801 6.639163,52.0350851 6.639208,52.0351029 6.6392373,52.0351303 6.639246,52.0351628 6.6392324,52.0351946 6.639199,52.0352203 6.6391515,52.0352353 6.6390982,52.0352372 6.6390482,52.0352256 6.6390102,52.0352025 6.6389907,52.0351719 6.6389932,52.035139 6.6390172,52.0351097 6.6390586,52.0350888 6.6391101,52.0350801</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562956</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6310251,52.0375535 6.630929,52.0374735 6.6306838,52.0371764 6.6306158,52.0370285 6.6305988,52.0369688 6.63056,52.0368912 6.6304581,52.0367224 6.6304581,52.0366179 6.6304532,52.0364865 6.6304508,52.0363088 6.6304411,52.0362684 6.6303245,52.0360549 6.6302858,52.0360035 6.6301935,52.0359489 6.6300769,52.035931 6.6299895,52.035931 6.6293802,52.0360669</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562957</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6316834,52.0387786 6.6320924,52.038897</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562958</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6317354,52.0343437 6.6316156,52.0343633 6.6314335,52.0343932</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562959</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6305988,52.0369688 6.630193,52.0370098</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562960</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6363627,52.0347844 6.6374736,52.0326782</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562961</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6301726,52.0393741 6.6299587,52.0394776</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562962</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6371007,52.036111 6.6378148,52.0364193</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562963</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6358099,52.0370701 6.6362288,52.0368205 6.636603,52.0365608 6.6368055,52.0363961 6.6369634,52.0362377 6.6371007,52.036111 6.6372655,52.0358765 6.6373273,52.0358343 6.6374063,52.0358174 6.637523,52.0358322 6.6378079,52.0359251 6.6382611,52.0360941 6.6380071,52.0363053 6.6378148,52.0364193 6.6373823,52.0367297 6.6369154,52.0369979 6.6363352,52.0373105 6.6360022,52.0375238 6.6359345,52.0375817 6.6358957,52.0376474 6.6358714,52.0376847 6.6357913,52.03774</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562964</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6349622,52.0350192 6.6358891,52.0351712 6.6359372,52.0351649 6.6359715,52.0351438 6.6361672,52.0348186 6.6362084,52.0347848 6.6362736,52.0347763 6.6363627,52.0347844 6.6368572,52.0348291 6.6370254,52.0348291 6.6372531,52.0348168 6.6374327,52.0348272 6.6375735,52.0348437 6.6377823,52.0348885 6.6379401,52.0349318 6.6380978,52.03499 6.6382314,52.0350363 6.6384134,52.0351334 6.6386076,52.0351886 6.63878,52.0352095 6.6389232,52.0352215 6.6390102,52.0352025</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562965</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6289811,52.0363955 6.6295716,52.03627</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562966</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6294408,52.0415876 6.6295031,52.0416663 6.6294601,52.0417336 6.629373,52.0417155 6.6294408,52.0415876 6.6295356,52.0414303 6.629601,52.0412312</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562967</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6358099,52.0370701 6.6362391,52.037283 6.6363352,52.0373105</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562968</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6378543,52.0326787 6.6376435,52.0326872 6.6374736,52.0326782</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562969</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6296371,52.0365289 6.6296711,52.0365693 6.6297585,52.0367485</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562970</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6339557,52.0376241 6.6339003,52.0375774 6.6333856,52.0373146</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562971</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6339003,52.0375774 6.634495,52.0371533 6.6345224,52.0370279</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562972</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6301026,52.0347986 6.6301057,52.0347504 6.6300812,52.03468 6.6300353,52.0346489 6.6299576,52.0346145 6.6299285,52.0345892 6.6299176,52.0345452 6.6299502,52.0345019 6.6300172,52.0344534 6.6301751,52.0343837 6.6302575,52.0343552 6.6303279,52.0343393 6.6304463,52.0343383 6.6305287,52.0343361 6.6306025,52.0343277 6.6306609,52.0343119 6.6307158,52.0342823 6.6309507,52.0340803 6.6310385,52.0340172 6.6311552,52.0339697 6.631241,52.0339423 6.6313681,52.0339159 6.6314384,52.0339127 6.6314916,52.0339264 6.6315414,52.0339497 6.6315912,52.0339845 6.6316118,52.0340331 6.6316032,52.0340848 6.631562,52.0342432 6.6315363,52.0342591 6.6314728,52.0342802 6.6314367,52.0343002 6.6314216,52.0343219 6.6314335,52.0343932</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562973</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6299895,52.035931 6.6300348,52.0358555 6.6301368,52.0357524 6.6303698,52.0355852</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562974</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6382314,52.0350363 6.6384498,52.0350139 6.6385979,52.0349721 6.6387873,52.0349019</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562975</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6298386,52.0374279 6.6298823,52.0373801 6.6298847,52.0373264 6.629824,52.0371949</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562976</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6299697,52.0364543 6.6300401,52.036505 6.6300595,52.0365797 6.6300474,52.0366335 6.6300109,52.0366947 6.629943,52.0367485</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562977</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6306479,52.0402146 6.6302005,52.0403267 6.6301544,52.0403252 6.630067,52.0403103 6.6300379,52.0402909 6.6297927,52.0399612</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562978</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6302634,52.0374204 6.6302925,52.0373682 6.6302998,52.0373114 6.6302804,52.0372621 6.6302197,52.0372069 6.6301372,52.0371516</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562979</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6345224,52.0370279 6.6347475,52.0368578 6.6348081,52.0367891 6.6349028,52.0366965 6.6349756,52.0366457 6.6349951,52.036592 6.6351237,52.0360663</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562980</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6291977,52.0365618 6.6293045,52.0366096 6.6293895,52.0367888 6.6294915,52.0372144 6.6294745,52.0372905 6.6294502,52.0373891 6.6294065,52.0374578</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562981</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6314335,52.0343932 6.6303582,52.0348385 6.6302805,52.0348371 6.6301931,52.0348221 6.6301026,52.0347986</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562982</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6306078,52.0381562 6.6300066,52.0385266 6.6297262,52.0386817 6.629648,52.0387044 6.629572,52.0387071 6.6294829,52.0386897 6.6294329,52.0386589 6.6294291,52.0386364</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322562983</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6342984,52.0358752 6.6344392,52.0358513 6.6345363,52.0358513 6.6347378,52.0359036 6.6348397,52.0359424 6.6350169,52.036035 6.6351237,52.0360663 6.6352427,52.0360813 6.6359879,52.0364919</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">322567589</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">50</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6329721,52.0324318 6.6322236,52.0327083</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">326385103</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6276118,52.0436418 6.6277893,52.043602 6.6278751,52.0436218</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">419661031</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.65046230829895,52.0257568621488 6.6503849,52.025817 6.649784,52.0262352 6.6481806,52.0273602 6.6473595,52.0279712 6.6466126,52.028587 6.6461635,52.0289894 6.6458267,52.0293168 6.6454898,52.0296712 6.6454487,52.0297502 6.6453796,52.0298083</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">428976004</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6637713,52.0309509 6.6637929,52.0310787 6.6637799,52.0312029</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Elshofweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">464542052</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6313227,52.0358355 6.6312493,52.0358883 6.6312493,52.0359579 6.6313228,52.0360107 6.6314343,52.0360212 6.6315421,52.0359734 6.6315561,52.035892 6.6315023,52.0358444 6.6314147,52.0358232 6.6313227,52.0358355</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">464542053</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6302858,52.0360035 6.6304074,52.0359263 6.6305191,52.0358694 6.630683,52.0358205 6.6308148,52.0357728 6.6309274,52.0356952 6.6310547,52.0355919 6.6312413,52.0355361 6.631378,52.0355243</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">464542055</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6315959,52.0347934 6.6317702,52.0348121 6.6317885,52.0348211 6.631802,52.0348326 6.6318163,52.0348451 6.6318236,52.0348587 6.6317667,52.0350716 6.6317542,52.0350813 6.6317399,52.0350902 6.6317174,52.0350942 6.6316948,52.0350979 6.6315118,52.0350796</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">464542056</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">1</SimpleData>
+		<SimpleData name="bridge">T</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6314392,52.0351297 6.6312272,52.0351227</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">464542058</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6314969,52.0351316 6.6314392,52.0351297</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">489409110</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6381948,52.0322724 6.6379536,52.0322681 6.6378243,52.032269 6.6377556,52.0322831</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">489409111</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">1</SimpleData>
+		<SimpleData name="bridge">T</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6384156,52.0322792 6.6381948,52.0322724</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">489409112</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6418809,52.0328912 6.6418092,52.0328521 6.6416594,52.0327687 6.6415128,52.0327017 6.6413219,52.0326765 6.6411232,52.032691 6.6408599,52.0326901 6.6407322,52.0326542 6.6405871,52.0325756 6.6405508,52.032564 6.6403269,52.0325116 6.6401298,52.0324689 6.6398207,52.0324349 6.6396173,52.0324233 6.6394249,52.0324369 6.6392577,52.0324369 6.6391268,52.0324097 6.6389297,52.0323806 6.6388099,52.0323689 6.6386932,52.0323437 6.6386017,52.0323243 6.638526,52.0322972 6.6384156,52.0322792</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">489414517</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6343912,52.0383297 6.6344459,52.0382709 6.6345713,52.0381784 6.6347879,52.0380947 6.6350296,52.0380022 6.6351943,52.0379141 6.6354164,52.0378116 6.6355685,52.0377698 6.6357082,52.0377522 6.6357913,52.03774</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">495265882</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.62800155245789,52.0318661535595 6.6285746,52.0320687 6.628504,52.0321602 6.6283725,52.0323216 6.6283541,52.0323606 6.6283732,52.0323839 6.6284103,52.0324216 6.6284172,52.0324456 6.6284137,52.0324673 6.6284039,52.0324852 6.6283841,52.0325051</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">503096091</SimpleData>
+		<SimpleData name="code">5152</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6465036,52.0298629 6.6464854,52.0298317 6.6464166,52.0298075 6.6463251,52.0297817 6.6462659,52.0297656 6.646195,52.0297535 6.6460814,52.0297425 6.6459898,52.0297343 6.6458903,52.0297384 6.6454487,52.0297502 6.6454304,52.0297507</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">503096094</SimpleData>
+		<SimpleData name="code">5152</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.644912,52.0297917 6.6448369,52.0298003 6.6444366,52.0298458 6.6440023,52.0298925 6.643882,52.0299037 6.6437571,52.0299245 6.6435752,52.0299535 6.6431455,52.0300284 6.6427244,52.030112 6.6422933,52.0301841 6.6418615,52.0302549 6.6369393,52.0309476</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">503096096</SimpleData>
+		<SimpleData name="code">5152</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">1</SimpleData>
+		<SimpleData name="bridge">T</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6454304,52.0297507 6.644912,52.0297917</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">511299588</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6453796,52.0298083 6.6458904,52.0297737 6.6460625,52.0297737 6.6461792,52.0297812 6.646273,52.0297982 6.6463667,52.0298238 6.6465036,52.0298629</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">511299589</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6354632,52.031458 6.6355081,52.031471 6.6355275,52.0314866</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Zwolseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">511299590</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6369393,52.0309476 6.6369553,52.0310075</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Oude Winterswijkseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">511299591</SimpleData>
+		<SimpleData name="code">5152</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6369393,52.0309476 6.6367342,52.0310029 6.6365638,52.0310546 6.6354632,52.031458</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">553988639</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6269589,52.0432376 6.6267702,52.0431839</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Maarsevonder</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">553992055</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">60</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.62649910595723,52.0441882132557 6.6266426,52.043589</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Meddoseweg</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">611845154</SimpleData>
+		<SimpleData name="code">5115</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.654971,52.028384 6.6546931,52.0287999 6.6544193,52.0292399</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">653533048</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6624945,52.038998 6.6630433,52.0387864 6.6633287,52.0386763</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">653533049</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6634807,52.039237 6.6630433,52.0387864</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">653533050</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6635594,52.0397504 6.6634011,52.0396134 6.6631865,52.0393429 6.6634807,52.039237 6.6640395,52.039036</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">653533051</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6625107,52.039938 6.6634011,52.0396134</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">653533052</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6622156,52.039625 6.6627359,52.0394353</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">653533060</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6482175,52.0393997 6.6471818,52.0394781 6.6462457,52.0407964 6.6457844,52.0406776</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">653533061</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6511622,52.0394551 6.6513392,52.0394221 6.6528922,52.0385278 6.6529727,52.0384981 6.6530907,52.0384882 6.6554189,52.0384783</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">653533062</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6493121,52.0406932 6.6501725,52.0403955 6.6508269,52.0401513 6.651586,52.0398939</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">653533063</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6505158,52.039658 6.6504809,52.039757 6.6504863,52.0397966 6.6505131,52.0398296 6.6508269,52.0401513</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">653533064</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6487553,52.0400311 6.6503334,52.0394814 6.6504782,52.0396398 6.6505158,52.039658 6.6505855,52.0396547 6.6511622,52.0394551</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">665159350</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6275596,52.0421644 6.627467,52.0415724 6.6277075,52.0414287</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687014100</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6294291,52.0386364 6.629385,52.0386391 6.6292626,52.038614 6.629143,52.0385694</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687014101</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6288443,52.0392133 6.6287525,52.0394423</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687014102</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.629601,52.0412312 6.6298223,52.0407936 6.6298189,52.040763 6.629097,52.0405019 6.6290047,52.0404795 6.6285161,52.0402189 6.6287092,52.0398922 6.6297063,52.0393783 6.6297716,52.0393625 6.6298282,52.0393804 6.6298831,52.0394089 6.6299587,52.0394776 6.6299724,52.0395135 6.6299587,52.0395473 6.6299261,52.0395726 6.6296995,52.0397099 6.6295433,52.0397838 6.6294042,52.0398471 6.6293562,52.0398746 6.6293407,52.0399052 6.6293407,52.0399379 6.629363,52.0399812 6.6294626,52.0401079</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687014103</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6307079,52.0403267 6.6306156,52.0404283 6.6304724,52.0406224 6.6302199,52.040912 6.6299602,52.0411808 6.6298874,52.0412151 6.6298243,52.0412256 6.629601,52.0412312</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687188164</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6300673,52.0361909 6.6295716,52.03627</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687188165</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6295716,52.03627 6.6295339,52.0361876 6.6294652,52.0361095 6.6293802,52.0360669 6.6292867,52.0360398 6.6291957,52.0359923 6.6290979,52.0359004 6.6290035,52.0358297 6.6288902,52.0357547 6.6288336,52.0356987 6.6287992,52.0356555 6.6287924,52.0356132 6.628813,52.0355562 6.6289125,52.0352869 6.6289383,52.0352426 6.6290086,52.0351951 6.6295962,52.0349274 6.6296717,52.034881 6.629749,52.0348356 6.6298142,52.0348092 6.6298932,52.0347965 6.6299841,52.0347912 6.6301026,52.0347986</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687188166</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6293802,52.0360669 6.6291355,52.0361393 6.6288711,52.0361868</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687188167</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6300812,52.03468 6.6304607,52.0345204 6.6304784,52.0345354 6.6305512,52.034503</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687210596</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6317284,52.0363002 6.6319771,52.036622 6.6318547,52.0367913</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687210597</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6285059,52.0421638 6.6285091,52.0419148 6.6283511,52.0417524 6.6281289,52.0417067 6.6280594,52.0416158</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687210598</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6317284,52.0363002 6.6318113,52.036307 6.6322374,52.0363494 6.6327593,52.036433 6.6335864,52.0365795 6.633791,52.036657 6.6339221,52.0367183 6.6345224,52.0370279 6.6352042,52.0374147 6.6357913,52.03774 6.6358621,52.0377799</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687210604</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6286533,52.042167 6.6286567,52.0420216 6.6284631,52.0417638 6.6285091,52.0416455</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687221373</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6489629,52.0439258 6.6467765,52.043227</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687221374</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.643671,52.0465411 6.6434909,52.0464505</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687221376</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6492127,52.0435283 6.647609,52.0429796</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687221379</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6418227,52.042689 6.6415459,52.0425602</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687221380</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6432653,52.0471293 6.643671,52.0465411 6.6438092,52.0463983 6.64342,52.0462192</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687221382</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6456878,52.0449393 6.6456192,52.0449733 6.645552,52.0449684 6.6454373,52.0449353 6.6451437,52.0447637</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Marhulzenpad</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687221384</SimpleData>
+		<SimpleData name="code">5152</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.642496,52.0422439 6.6424462,52.0422118 6.6424073,52.0421923 6.6422896,52.0421059 6.6422101,52.0420483 6.641978,52.0419177 6.6409247,52.0413711 6.6405528,52.0411383 6.64029,52.0409471 6.6399274,52.0406593 6.6393221,52.0401412 6.6375146,52.0386378 6.6374422,52.0386172 6.6371292,52.0385937 6.6362574,52.0385727 6.6353492,52.038542 6.6352668,52.0385345 6.6350095,52.0385477</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687221387</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6382996,52.0454766 6.6382361,52.0454139 6.6389535,52.045177</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687221388</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6427029,52.0417012 6.6425027,52.0417978 6.6424414,52.0418164 6.6423827,52.0418134 6.6423367,52.0417897 6.642191,52.0416962</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687221390</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6402297,52.0395626 6.640416,52.0397033 6.6412004,52.0402167 6.6420183,52.0407173 6.6424366,52.0409203 6.6426178,52.0409246 6.6427227,52.0414885 6.6427029,52.0417012 6.6426622,52.0421378 6.6426608,52.0422039</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687221392</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6452941,52.0446588 6.6451437,52.0447637 6.6448689,52.044953 6.6446542,52.0448636</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687221394</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.648186,52.0459862 6.6487577,52.0454189 6.6481229,52.0451993</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687221396</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6500942,52.0421498 6.6503539,52.0422015 6.6498554,52.0431263</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687221400</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.642496,52.0422439 6.6422821,52.042411 6.6418227,52.042689 6.6414183,52.0430444</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687221405</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6510639,52.0418557 6.6508734,52.0421632</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687289484</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6313488,52.0386862 6.6310441,52.038602 6.6308695,52.0385962</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687289485</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">T</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6325848,52.0383996 6.6325617,52.0385388</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687289486</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6323114,52.0389577 6.6324039,52.0388402</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687289487</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6311174,52.039248 6.6312073,52.0391453 6.6312698,52.0388451 6.631318,52.0387458 6.6313488,52.0386862 6.6314278,52.0387014 6.6316834,52.0387786 6.6316052,52.0389621 6.6315736,52.0391442 6.6315608,52.0392884 6.631487,52.0393602</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687289488</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6325848,52.0383996 6.6326074,52.0382527 6.6327095,52.0381654 6.6327435,52.0381118 6.6327729,52.0380643</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687289489</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6315494,52.039375 6.6317664,52.0393866 6.6320244,52.0393445 6.6324911,52.0390376 6.6325239,52.0390196 6.6327008,52.0390545 6.6327858,52.0390918 6.6328174,52.0391247 6.6328052,52.0391635 6.6316489,52.039879 6.631306,52.0398182</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687289490</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6325239,52.0390196 6.6323114,52.0389577 6.6320924,52.038897</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687289491</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.631306,52.0398182 6.6310316,52.0397721 6.6310025,52.0397457 6.6309904,52.0397066 6.6310007,52.0396676 6.6310385,52.0396306 6.631126,52.0395198 6.6311604,52.039467 6.631209,52.0392734</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687289492</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6324039,52.0388402 6.6319305,52.0387158 6.6312486,52.0384898 6.6311841,52.0384149</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687289493</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6308461,52.0384172 6.6311841,52.0384149</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687289494</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6325617,52.0385388 6.63254,52.0386322 6.6324039,52.0388402</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">687289496</SimpleData>
+		<SimpleData name="oneway">F</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6311841,52.0384149 6.6313806,52.0381871 6.6316471,52.0380682 6.6319826,52.0380114 6.6323084,52.0380198 6.6325657,52.0380625 6.6327435,52.0381118 6.6330511,52.0381932 6.6336619,52.0382905 6.6340727,52.0384221 6.6341131,52.0385003 6.6340411,52.0385798 6.6338529,52.0386951 6.6332031,52.0390038 6.6330909,52.0390196 6.6329439,52.0390196 6.6325926,52.0388898 6.6324039,52.0388402</coordinates></LineString>
+  </Placemark>
+  <Placemark>
+	<name>Drostenhuis</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#roads">
+		<SimpleData name="osm_id">689371617</SimpleData>
+		<SimpleData name="code">5121</SimpleData>
+		<SimpleData name="oneway">B</SimpleData>
+		<SimpleData name="maxspeed">0</SimpleData>
+		<SimpleData name="layer">0</SimpleData>
+		<SimpleData name="bridge">F</SimpleData>
+		<SimpleData name="tunnel">F</SimpleData>
+	</SchemaData></ExtendedData>
+      <LineString><coordinates>6.6528938,52.0310559 6.6542196,52.0311584 6.6542894,52.0311815 6.6543216,52.0312211 6.6543213,52.0320138</coordinates></LineString>
+  </Placemark>
+</Folder>
+</Document></kml>

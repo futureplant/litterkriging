@@ -1,0 +1,5 @@
+source('scripts/getpoints.R')
+roads <- getPoints('data/osm_roads_aoi_wgs84.shp')
+plot(roads)
+class(roads)
+st_write(roads, "data/roads.kml", driver='kml', update=TRUE)

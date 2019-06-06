@@ -22,7 +22,7 @@ server <- function(input, output, session) {
   # url of gsheet which contains form answers
   dtf <- getDataFrame('https://docs.google.com/spreadsheets/d/1Dn96ArmKeIu-lnDSUHzAKnGcJv7Kjmqii_H-Y-zVd74/edit?usp=sharing')
  
-  samplepoints <- getPoints("data/allpoints.shp")
+  samplepoints <- getPoints("data/bias_samples.shp")
   roads <- getPoints("data/osm_roads_aoi_wgs84.shp")
   completes <- getCompletes(dtf)
 
