@@ -38,20 +38,22 @@ sampledata <- st_as_sf(sampledata)
 sampledata <- st_transform(sampledata, crs =28992)
 
 
-# Exploratory analysis
-hist(sampledata$total, breaks = c(0,0.5,1,2,3,4,5,6,7,8,9,10,20,30,40,50))
-summary(sampledata)
+# Work only with kriging points (not validation or bias data)
+sampledata_krig <- sampledata[sampledata$Point.ID < 200,]
+sampledata_low <- sampledata_krig[sampledata_krig$total < 40,]
 
-# Without 119
-sampledata_low <- sampledata[-119,]
+# Exploratory analysis
+hist(sampledata_low$total, breaks = c(0,0.5,1,2,3,4,5,6,7,8,9,10,20,30,40,50))
+summary(sampledata_low)
+
 
 # Make semivariogram
 glitter <- gstat(formula = total ~ 1, data = sampledata_low)
 
-vglitter <- variogram(glitter, boundaries = c(25, 60, 100, 200, 300, 400, 500, 600, 700, 800, 900, 1100))
+vglitter <- variogram(glitter, boundaries = c(70, 125, 175, 300, 400, 500, 600, 800, 1000, 1500))
 plot(vglitter, plot.numbers = T)
 
-vgmlitter <- vgm(nugget = 1.5, psill = 7.5, range = 400, model = 'Exp')
+vgmlitter <- vgm(nugget = 1.5, psill = 12, range = 350, model = 'Exp')
 vgmlitter <- fit.variogram(vglitter, vgmlitter)
 
 plot(vglitter, vgmlitter)
@@ -66,17 +68,26 @@ attr(vgmlitter, 'SSErr')
   # cross-validation
 litter_cv <- krige.cv(formula = total ~ 1, locations = sampledata_low, vgmlitter, nmax = 15)
 plot(litter_cv$residual)
-bubble(litter_cv, zcol = 'residual')
-mean(litter_cv$zscore)
-sd(litter_cv$zscore)
+
+
+litter_cv_sp <- as(litter_cv, 'Spatial')
+bubble(litter_cv_sp_na, zcol = 'residual')
+
+mean(litter_cv$zscore, na.rm = T)
+sd(litter_cv$zscore, na.rm = T)
+
 
   # get roadnetwork raster
-roadnetwork <- raster('data/a04_osm_roads_buffer_raster_wgs84.tif')
-roadnetwork[roadnetwork == -9999] <- NA
-roadnetwork <- as(roadnetwork, 'SpatialGridDataFrame')
+roadnetwork_ori <- raster('data/a04_osm_roads_buffer_raster_wgs84.tif')
+roadnetwork_ori[roadnetwork_ori == -9999] <- NA
+roadnetwork_ori <- as(roadnetwork_ori, 'SpatialGridDataFrame')
 
-roadnetwork <- projectRaster(roadnetwork, crs = 28992)
+roadnetwork <- spTransform(roadnetwork, CRS(proj4string(sampledata_low)))
 
+# "+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.417,50.3319,465.552,-0.398957,0.343988,-1.8774,4.0725 +units=m +no_defs"
+
+
+sampledata_low <- as(sampledata_low, 'Spatial')
 
   # ordinary kriging
 litter_krig = krige(total ~ 1, locations = sampledata_low, newdata = roadnetwork, model = vgmlitter, nmax = 15)
