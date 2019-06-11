@@ -1,0 +1,26 @@
+[general]
+creator=R package 'raster'
+created=2019-06-11 15:59:50
+[georeference]
+nrows=507
+ncols=544
+xmin=240006.840635498
+ymin=449260.533398279
+xmax=242726.840635498
+ymax=451795.533398279
+projection=+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs
+[data]
+datatype=FLT4S
+byteorder=little
+nbands=1
+bandorder=BIL
+categorical=FALSE
+minvalue=0.00460650331025025
+maxvalue=20.8392660181406
+nodatavalue=-3.4e+38
+[legend]
+legendtype=
+values=
+color=
+[description]
+layername=var1.pred

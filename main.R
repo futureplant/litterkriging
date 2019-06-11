@@ -83,10 +83,11 @@ mean(litter_cv$zscore)
 sd(litter_cv$zscore)
 
 
-  # get roadnetwork raster
-roadnetwork <- raster('data/c02_osm_road_raster.tif')
-roadnetwork[roadnetwork == -9999] <- NA
-roadnetwork <- as(roadnetwork, 'SpatialGridDataFrame')
+  # get roadnetwork with buffer 
+# roadnetwork <- raster('data/c02_osm_road_raster.tif')
+# roadnetwork[roadnetwork == -9999] <- NA
+# roadnetwork <- as(roadnetwork, 'SpatialGridDataFrame')
+roadnetwork <- readOGR(dsn = 'data', layer = 'c03_osm_roads_buffer_Dissolve')
 
 # roadnetwork <- spTransform(roadnetwork, CRS(proj4string(sampledata_low)))
 
@@ -97,7 +98,7 @@ roadnetwork <- as(roadnetwork, 'SpatialGridDataFrame')
 study_area <- readOGR(dsn = "data", layer = "mapping_area_groenlo")
 crs(study_area) <- crs(sampledata_low)
 
-area_raster <- raster(extent(study_area), resolution = c(10,10))
+area_raster <- raster(extent(study_area), resolution = c(5,5))
 crs(area_raster) <- crs(sampledata_low)
 area_raster <- as(area_raster, 'SpatialGrid')
 
@@ -112,13 +113,15 @@ spplot(litter_krig['var1.var'], sp.layout = list('sp.points', sampledata_low, co
 
 # (optional) Clip Raster on buffered roads
 
-final <- crop(litter_krig, roadnetwork)
 
+litter_krig_rast <- raster(litter_krig)
+final <- mask(litter_krig_rast, roadnetwork)
 
 
 # Visualize 
-
+spplot(final, zcol = 'var1.pred')
 
 
 
 # Export to geotiff
+writeRaster(final, 'output/litter_ordinarykriging', format = 'GTiff')
