@@ -98,7 +98,7 @@ roadnetwork <- readOGR(dsn = 'data', layer = 'c03_osm_roads_buffer_Dissolve')
 study_area <- readOGR(dsn = "data", layer = "mapping_area_groenlo")
 crs(study_area) <- crs(sampledata_low)
 
-area_raster <- raster(extent(study_area), resolution = c(5,5))
+area_raster <- raster(extent(study_area), resolution = c(1,1))
 crs(area_raster) <- crs(sampledata_low)
 area_raster <- as(area_raster, 'SpatialGrid')
 
