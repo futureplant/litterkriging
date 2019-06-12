@@ -7,6 +7,7 @@ library(raster)
 library(gsheet)
 library(stars)
 library(rgdal)
+library(automap)
 
 
 # Get data from google sheets
@@ -36,6 +37,11 @@ sampledata$category_zero <- ifelse(sampledata$total > 0, 1, 0)
 hist(sampledata$category_zero)
 
 
+# auto semivariogram
+variogram <- autofitVariogram(category_zero ~ 1, sampledata)
+plot(variogram)
+
+
 # Make semivariogram
 gzero <- gstat(formula = category_zero ~ 1, data = sampledata)
 
@@ -43,9 +49,53 @@ vgzero <- variogram(gzero)# , boundaries = c(70, 125, 175, 300, 400, 500, 600, 8
 vgzero
 plot(vgzero, plot.numbers = T)
 
-vgmzero <- vgm(nugget = 0.075, psill = 0.225, range = 1000, model = 'Exp')
+vgmzero <- vgm(nugget = 0.075, psill = 0.225, range = 1000, model = 'Sph')
 vgmzero <- fit.variogram(vgzero, vgmzero)
 
 plot(vgzero, vgmzero)
 attr(vgmzero, 'SSErr')
 
+# kriging cross-validation
+zero_cv <- krige.cv(formula = category_zero ~ 1, locations = sampledata, vgmzero)
+
+plot(zero_cv$residual)
+
+zero_cv_sp <- as(zero_cv, 'Spatial')
+bubble(zero_cv_sp, zcol = 'residual')
+
+mean(zero_cv$zscore)
+sd(zero_cv$zscore)
+
+
+
+# study area
+study_area <- readOGR(dsn = "data", layer = "mapping_area_groenlo")
+crs(study_area) <- crs(sampledata)
+
+area_raster <- raster(extent(study_area), resolution = c(3,3))
+crs(area_raster) <- crs(sampledata)
+area_raster <- as(area_raster, 'SpatialGrid')
+
+
+sampledata <- as(sampledata, 'Spatial')
+
+# ordinary kriging
+zero_krig = krige(category_zero ~ 1, locations = sampledata, newdata = area_raster, model = vgmzero, nmax = 15)
+
+spplot(zero_krig['var1.pred'])
+spplot(zero_krig['var1.var'], sp.layout = list('sp.points', sampledata, col = 'black'))
+
+# Clip Raster on buffered roads
+
+roadnetwork <- readOGR(dsn = 'data', layer = 'c03_osm_roads_buffer_Dissolve')
+zero_krig_rast <- raster(zero_krig)
+final <- mask(zero_krig_rast, roadnetwork)
+
+
+# Visualize 
+spplot(final, zcol = 'var1.pred')
+
+
+
+# Export to geotiff
+writeRaster(final, 'output/zero_ordinarykriging', format = 'GTiff')
