@@ -18,14 +18,6 @@ source('scripts/variogramkriging.R')
 
 # Retrieve and preprocess data ######################
 
-# Study area for kriging (new_data)
-study_area <- readOGR(dsn = "data", layer = "mapping_area_groenlo")
-crs(study_area) <- crs(sampledata)
-area_raster <- raster(extent(study_area), resolution = c(10,10))
-crs(area_raster) <- crs(sampledata)
-area_raster <- as(area_raster, 'SpatialGrid')
-
-
 # Get data from google sheets
 sampledata <- getDataFrame('https://docs.google.com/spreadsheets/d/1MyHRcpDJX2iro6a_2nk0mOJBRSm_x0lpkLH04IoKJII/edit?usp=sharing')
 sampledata$lon <- as.numeric(sub(".*,", "", sampledata$Coordinates))
@@ -61,6 +53,13 @@ sampledata$category_four <- ifelse(sampledata$total >= 7, 1, 0)
 
 sampledata <- as(sampledata, 'Spatial')
 
+
+# Study area for kriging (new_data)
+study_area <- readOGR(dsn = "data", layer = "mapping_area_groenlo")
+crs(study_area) <- crs(sampledata)
+area_raster <- raster(extent(study_area), resolution = c(10,10))
+crs(area_raster) <- crs(sampledata)
+area_raster <- as(area_raster, 'SpatialGrid')
 
 
 # Indicator Kriging #####################
