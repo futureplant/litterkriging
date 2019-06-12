@@ -3,11 +3,7 @@ library(raster)
 
 # dummy data
 findMaxLayer <- function(rasterbrick){
-  r <- which.min(rasterbrick)
-  classmatrix <-  matrix(c(1:3), nrow = 1, ncol = 3, 
-                    dimnames = list(c("cat1"),
-                                    c("from", "to", "becomes")))
-  r<- reclassify(r,classmatrix,include.lowest=T)
+  r <- which.max(rasterbrick)
   return(r)
 }
 
