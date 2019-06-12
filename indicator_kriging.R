@@ -8,7 +8,7 @@ library(gsheet)
 library(stars)
 library(rgdal)
 library(automap)
-
+source('scripts/variogramkriging.R')
 
 # Get data from google sheets
 sampledata <- read.csv(text=gsheet2text('https://docs.google.com/spreadsheets/d/1MyHRcpDJX2iro6a_2nk0mOJBRSm_x0lpkLH04IoKJII/edit?usp=sharing', 
@@ -29,18 +29,35 @@ sampledata <- sampledata[sampledata$point_id < 200,]
 sampledata <- sampledata[sampledata$total < 40,]
 
 
-
-
 # Threshold: larger than zero (0 when total==0; 1 when total>0)
 sampledata$category_zero <- ifelse(sampledata$total > 0, 1, 0)
 
 hist(sampledata$category_zero)
 
 
-# auto semivariogram
-variogram <- autofitVariogram(category_zero ~ 1, sampledata)
-plot(variogram)
+# study area
+study_area <- readOGR(dsn = "data", layer = "mapping_area_groenlo")
+crs(study_area) <- crs(sampledata)
 
+area_raster <- raster(extent(study_area), resolution = c(5,5))
+crs(area_raster) <- crs(sampledata)
+area_raster <- as(area_raster, 'SpatialGrid')
+
+
+sampledata <- as(sampledata, 'Spatial')
+
+
+
+kriglist <- variogram_kriging(category_zero~1, sampledata, area_raster)
+vgm1 <- kriglist[[1]]
+cv <- kriglist[[2]]
+krig <- kriglist[[3]]
+
+##################################################
+
+# auto semivariogram
+vgmzero <- autofitVariogram(category_zero ~ 1, sampledata)
+plot(variogram)
 
 # Make semivariogram
 gzero <- gstat(formula = category_zero ~ 1, data = sampledata)
@@ -56,7 +73,7 @@ plot(vgzero, vgmzero)
 attr(vgmzero, 'SSErr')
 
 # kriging cross-validation
-zero_cv <- krige.cv(formula = category_zero ~ 1, locations = sampledata, vgmzero)
+zero_cv <- krige.cv(formula = category_zero ~ 1, locations = sampledata, vgmzero$var_model)
 
 plot(zero_cv$residual)
 
@@ -66,24 +83,20 @@ bubble(zero_cv_sp, zcol = 'residual')
 mean(zero_cv$zscore)
 sd(zero_cv$zscore)
 
+# auto kriging
+# zero_krig_auto <- autoKrige(category_zero ~1, sampledata, new_data = area_raster)
+# spplot(zero_krig_auto, zcol = 'krige_output')
 
-
-# study area
-study_area <- readOGR(dsn = "data", layer = "mapping_area_groenlo")
-crs(study_area) <- crs(sampledata)
-
-area_raster <- raster(extent(study_area), resolution = c(3,3))
-crs(area_raster) <- crs(sampledata)
-area_raster <- as(area_raster, 'SpatialGrid')
-
-
-sampledata <- as(sampledata, 'Spatial')
-
-# ordinary kriging
-zero_krig = krige(category_zero ~ 1, locations = sampledata, newdata = area_raster, model = vgmzero, nmax = 15)
+# indicator kriging
+zero_krig = krige(category_zero ~ 1, locations = sampledata, newdata = area_raster, model = vgmzero$var_model, nmax = 15)
 
 spplot(zero_krig['var1.pred'])
 spplot(zero_krig['var1.var'], sp.layout = list('sp.points', sampledata, col = 'black'))
+
+
+####################################
+
+
 
 # Clip Raster on buffered roads
 
