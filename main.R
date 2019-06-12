@@ -58,7 +58,7 @@ sampledata <- as(sampledata, 'Spatial')
 # Study area for kriging (new_data)
 study_area <- readOGR(dsn = "data", layer = "mapping_area_groenlo")
 crs(study_area) <- crs(sampledata)
-area_raster <- raster(extent(study_area), resolution = c(10,10))
+area_raster <- raster(extent(study_area), resolution = c(3,3))
 crs(area_raster) <- crs(sampledata)
 area_raster <- as(area_raster, 'SpatialGrid')
 roadnetwork <- readOGR(dsn = 'data', layer = 'c03_osm_roads_buffer_Dissolve')
@@ -98,6 +98,7 @@ max_layer <- findMaxLayer(krigebrick)
 # Clip Raster on buffered roads
 
 final <- mask(max_layer, roadnetwork)
+
 
 # Visualize 
 plot(final)
