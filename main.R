@@ -14,6 +14,7 @@ library(automap)
 source('scripts/getdataframe.R')
 source('scripts/getpoints.R')
 source('scripts/variogramkriging.R')
+source('scripts/indicatorselection.R')
 
 
 # Retrieve and preprocess data ######################
@@ -45,7 +46,7 @@ hist(sampledata$total, breaks = c(0,1,2,3,4,5,6,7,8,9,10,20,30,40,50))
 summary(sampledata)
 
 # Prepare indicator kriging variables
-sampledata$category_zero <- ifelse(sampledata$total > 0, 1, 0)
+sampledata$category_zero <- ifelse(sampledata$total > 0, 0, 1)
 sampledata$category_one <- ifelse(sampledata$total >= 1 & sampledata$total <= 2, 1, 0)
 sampledata$category_two <- ifelse(sampledata$total >= 3 & sampledata$total <= 4, 1, 0)
 sampledata$category_three <- ifelse(sampledata$total >= 5 & sampledata$total <= 6, 1, 0)
@@ -60,6 +61,8 @@ crs(study_area) <- crs(sampledata)
 area_raster <- raster(extent(study_area), resolution = c(10,10))
 crs(area_raster) <- crs(sampledata)
 area_raster <- as(area_raster, 'SpatialGrid')
+roadnetwork <- readOGR(dsn = 'data', layer = 'c03_osm_roads_buffer_Dissolve')
+
 
 
 # Indicator Kriging #####################
@@ -72,7 +75,7 @@ krig_zero <- raster(kriglist_zero[[3]])
 kriglist_one <- variogram_kriging(category_one~1, sampledata, area_raster)
 vgm_one <- kriglist_one[[1]]
 cv_one <- kriglist_one[[2]]
-krig_one <- raster(rasterkriglist_one[[3]])
+krig_one <- raster(kriglist_one[[3]])
 
 kriglist_two <- variogram_kriging(category_two~1, sampledata, area_raster)
 vgm_two <- kriglist_two[[1]]
@@ -89,6 +92,15 @@ vgm_four <- kriglist_four[[1]]
 cv_four <- kriglist_four[[2]]
 krig_four <- raster(kriglist_four[[3]])
 
+krigebrick <- brick(c(krig_zero,krig_one,krig_two,krig_three,krig_four))
+max_layer <- findMaxLayer(krigebrick)
+
+# Clip Raster on buffered roads
+
+final <- mask(max_layer, roadnetwork)
+
+# Visualize 
+plot(final)
 
 
 
