@@ -34,8 +34,7 @@ colnames(df) <- c("point", "mean", "sd")
 plot(bias$point_id,bias$total)
 text(bias$point_id,bias$total, labels=bias$your_name, cex= 0.7)
 
-# get mean and sd of entire dataset
-mean_final <- mean(df$mean)
+# get sd of entire dataset
 sd_final <- mean(df$sd)
 
 # create table that shows measurements at all bias points per person
@@ -61,6 +60,11 @@ p10 <- ggplot(finaltable, aes(x = name, y = error)) +
 p10 <- p10 + stat_summary(fun.y=mean, geom="point", shape=21, size=4, fill = "blue", show.legend = T)
 p10 <- p10 + geom_hline(yintercept=0, linetype="dashed", color = "red") 
 p10 <- p10 + labs(title="Inter operator variability")
+text <- paste("Overall standard deviation:", format(round(sd_final, 2), nsmall = 2))
+p10 <- p10 + labs(caption = text,  xmin = 4, xmax = 4, ymin = -3, ymax = -3)
+
 p10
 dev.off()
+
+p10
 
