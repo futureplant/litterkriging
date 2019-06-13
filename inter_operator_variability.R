@@ -38,6 +38,7 @@ text(bias$point_id,bias$total, labels=bias$your_name, cex= 0.7)
 sd_final <- mean(df$sd)
 
 # create table that shows measurements at all bias points per person
+
 namelist <- c("intan", "joep","melanie","willy\n","joey")
 for (name in namelist){
   df[,(ncol(df)+1)] <- bias[bias$your_name == name,3]
@@ -62,6 +63,8 @@ p10 <- p10 + geom_hline(yintercept=0, linetype="dashed", color = "red")
 p10 <- p10 + labs(title="Inter operator variability")
 text <- paste("Overall standard deviation:", format(round(sd_final, 2), nsmall = 2))
 p10 <- p10 + labs(caption = text,  xmin = 4, xmax = 4, ymin = -3, ymax = -3)
+p10 <- p10 + scale_x_discrete(labels=c("intan" = "obs1", "joep" = "obs2",
+                                       "joey" = "obs3", "melanie" = "obs4", "willy\n" = "obs5"))
 
 p10
 dev.off()
