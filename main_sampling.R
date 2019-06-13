@@ -1,26 +1,26 @@
-### Sampling Strategy for Measuring Litter Intensity in Groenlo ###
+### Sampling Strategy for Measuring Litter Intensity in Groenlo, the Netherlands ###
+# This script creates a regular grid of sampling points along a road network
+# as well as coordinates for random short-distance points which will be used in ArcMap.
+# This sampling scheme enables us to make a variogram and perform a kriging analysis.
 
-# Date: 20 May 2019
+# Date: May 2019
 
+# Libraries ------------------------------------
 library(rgdal)
 library(sp)
 library(rgeos)
 library(raster)
 
-# Import road networks
 
+# Import road networks and study area ------------------------------------
 roadnetwork <- readOGR(dsn = "data", layer = "osm_roads_groenlo")
-
-# roadnetwork <- gLineMerge(roadnetwork)
 
 study_area <- readOGR(dsn = "data", layer = "mapping_area_groenlo")
 
 study_roadnetwork <- crop(roadnetwork, study_area)
 
 
-# Regular grid along road
-
-# numOfPoints <- gLength(study_roadnetwork) / 1000
+# Create a regular grid along road ------------------------------------
 sample_reg <- spsample(study_roadnetwork, n = 90, type = "regular")
 length(sample_reg)
 
@@ -29,11 +29,14 @@ id_df[1:74,] = as.numeric(id_df[1:74,])
 names(id_df) = 'ID'
 sample_reg <- SpatialPointsDataFrame(sample_reg, id_df)
 
-
 plot(study_roadnetwork) #, col = study_roadnetwork@data$code)
 plot(sample_reg, add = T, col = 'red')
 
-# Short-distance random grid
+# Export regular grid sampling points
+writeOGR(sample_reg, 'output', layer = 'regular_sample_points', driver = 'ESRI Shapefile')
+
+
+# Create short-distance random coordinates ------------------------------
 set.seed(500)
 sample_short <- sample(1:nrow(sample_reg@coords), 30)
 
@@ -43,12 +46,9 @@ short_dist_rndm <- sample(short_dist, 30, replace = T)
 
 short_dist_df <- data.frame(sample_short, short_dist_rndm)
 
-### ArcMap needed for adding short-distance points ### 
+### Note: ArcMap used for adding short-distance points to the regular points ### 
 
 
-# Export sampling points
-
-writeOGR(sample_reg, 'output', layer = 'regular_sample_points', driver = 'ESRI Shapefile')
 
 
 # Transform sample points to WGS84
