@@ -9,5 +9,6 @@ sampledata$lat <- as.numeric(sub(",.*", "", sampledata$Coordinates))
 sampledata$total <- sampledata$total + 0.0001
 #sampledata$road_type <- factor(sampledata$road_type)
 
-regression <- lm(total ~ road_type, data=lmdata)
+regression <- lm(total ~ road_type, data=sampledata)
 regression$residuals
+summary(regression)

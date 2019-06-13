@@ -1,9 +1,8 @@
+# load libraries ----
 library(shinydashboard)
 library(shiny)
 
-
-
-# Construct the UI argument for the call to the Shiny App in the main.R script
+# Construct the UI argument for the call to the Shiny App in the main.R script ----
 ui <- dashboardPage(
   dashboardHeader(title = "Littering"),
   dashboardSidebar(disable = TRUE),
@@ -18,7 +17,7 @@ ui <- dashboardPage(
     
     column(width = 3,
            
-           # Construct box with image and introductory text for the app
+           # Construct box with introductory text for the app
            box(HTML("<p><strong>Littering in Groenlo</strong><br/></p>
                     <p align='justify'>Welcome to the littering app.
                     You can use this map to enter fieldwork data.<br/ > <br/ >
