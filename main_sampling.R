@@ -1,5 +1,5 @@
 ### Sampling Strategy for Measuring Litter Intensity in Groenlo, the Netherlands ###
-# This script contains code for sampling for three different goals:
+# This script contains code to create sampling schemes for three different goals:
 
 # The first part creates a regular grid of sampling points along a road network
 # as well as coordinates for random short-distance points which will be used in ArcMap.
@@ -7,20 +7,21 @@
 
 # The second sampling scheme is to create random validation points in the same study area.
 
-# The final sampling scheme is used to determine observer bias.
+# The final sampling scheme is used to determine observer bias and is again a random sampling method.
 
 
 # Date: May 2019
 
+
 # Libraries ------------------------------------
-library(rgdal)
 library(sp)
+library(rgdal)
 library(rgeos)
 library(raster)
 
 
 # Import road networks and study area ------------------------------------
-roadnetwork <- readOGR(dsn = "data", layer = "osm_roads_groenlo")
+roadnetwork <- readOGR(dsn = "data", layer = "osm_roads_aoi_wgs84")
 
 study_area <- readOGR(dsn = "data", layer = "mapping_area_groenlo")
 
