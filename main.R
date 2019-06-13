@@ -47,7 +47,7 @@ sampledata <- as(sampledata, 'Spatial')
 # Study area for kriging (new_data)
 study_area <- readOGR(dsn = "data", layer = "mapping_area_groenlo")
 crs(study_area) <- crs(sampledata)
-area_raster <- raster(extent(study_area), resolution = c(3,3))
+area_raster <- raster(extent(study_area), resolution = c(1,1))
 crs(area_raster) <- crs(sampledata)
 area_raster <- as(area_raster, 'SpatialGrid')
 
@@ -314,11 +314,11 @@ plot(final_other)
 
 
 # Export litter maps as geotiff #########################
-writeRaster(final_total, 'output/total_indicatorkriging', format = 'GTiff')
-writeRaster(final_plastics, 'output/plastics_indicatorkriging', format = 'GTiff')
-writeRaster(final_paper, 'output/paper_indicatorkriging', format = 'GTiff')
-writeRaster(final_organic, 'output/organic_indicatorkriging', format = 'GTiff')
-writeRaster(final_cigarette, 'output/cigarette_indicatorkriging', format = 'GTiff')
-writeRaster(final_other, 'output/other_indicatorkriging', format = 'GTiff')
+writeRaster(final_total, 'output/total_indicatorkriging', format = 'GTiff', overwrite=T)
+writeRaster(final_plastics, 'output/plastics_indicatorkriging', format = 'GTiff', overwrite=T)
+writeRaster(final_paper, 'output/paper_indicatorkriging', format = 'GTiff', overwrite=T)
+writeRaster(final_organic, 'output/organic_indicatorkriging', format = 'GTiff', overwrite=T)
+writeRaster(final_cigarette, 'output/cigarette_indicatorkriging', format = 'GTiff',overwrite=T)
+writeRaster(final_other, 'output/other_indicatorkriging', format = 'GTiff',overwrite=T)
 
 
