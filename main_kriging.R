@@ -1,9 +1,10 @@
+### Spatial Modelling of Littering patterns in Groenlo, the Netherlands ###
 # Script for performing kriging methods on littering observations in Groenlo
-# Main script for litterkriging
-# Use as bookkeeping script, refer to /scripts for logic
+
+# Date: June 2019
 
 
-# Libraries & Imports ################
+# Libraries & Imports -------------------------------
 library(sp)
 library(gstat)
 library(raster)
@@ -17,7 +18,7 @@ source('scripts/variogramkriging.R')
 source('scripts/indicatorselection.R')
 
 
-# Retrieve and preprocess data ######################
+# Retrieve and preprocess data -------------------------------
 
 # Get data from google sheets
 sampledata <- getDataFrame('https://docs.google.com/spreadsheets/d/1MyHRcpDJX2iro6a_2nk0mOJBRSm_x0lpkLH04IoKJII/edit?usp=sharing')
@@ -55,7 +56,7 @@ roadnetwork <- readOGR(dsn = 'data', layer = 'c03_osm_roads_buffer_Dissolve')
 
 
 
-# Exploratory analysis ########################
+# Exploratory analysis -------------------------------
 summary(sampledata)
 
 hist(sampledata$total, breaks = c(0,1,2,3,4,5,6,7,8,9,10,20,30,40,50))
@@ -67,7 +68,7 @@ hist(sampledata$organic_waste, breaks = c(0,1,2,3,4,5,6,7,8,9,10,20))
 hist(sampledata$cigarette_butts, breaks = c(0,1,2,3,4,5,6,7,8,9,10,20))
 hist(sampledata$other, breaks = c(0,1,2,3,4,5,6,7,8,9,10,20))
 
-# Prepare indicator kriging variables for each category ############################
+# Prepare indicator kriging variables for each category -------------------------------
 # total, plastic, paper, organic, cigarettes, other
 
    # total
@@ -114,7 +115,7 @@ sampledata$other_four <- ifelse(sampledata$other >= 4, 1, 0)
 
 
 
-# Indicator Kriging #####################
+# Indicator Kriging -------------------------------
 
    # total -----------------------
 kriglist_zero_t <- variogram_kriging(total_zero~1, sampledata, area_raster)
@@ -293,8 +294,7 @@ max_layer_other <- findMaxLayer(krigebrick_ot)
 
 
 
-# Clip rasterlayers with kriging results to roadnetwork ##########################
-
+# Clip rasterlayers with kriging results to roadnetwork -------------------------------
 final_total <- mask(max_layer_total, roadnetwork)
 final_plastics <- mask(max_layer_plastics, roadnetwork)
 final_paper <- mask(max_layer_paper, roadnetwork)
@@ -313,7 +313,7 @@ plot(final_cigarette)
 plot(final_other)
 
 
-# Export litter maps as geotiff #########################
+# Export litter maps as geotiff -------------------------------
 writeRaster(final_total, 'output/total_indicatorkriging', format = 'GTiff', overwrite=T)
 writeRaster(final_plastics, 'output/plastics_indicatorkriging', format = 'GTiff', overwrite=T)
 writeRaster(final_paper, 'output/paper_indicatorkriging', format = 'GTiff', overwrite=T)
