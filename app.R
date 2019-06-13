@@ -1,9 +1,11 @@
-# Main file of the litterkriging
+# Fieldwork app
 
+# load libraries ----
 library(shiny)
 library(shinydashboard)
 library(leaflet)
 
+# source scripts ----
 source("ui.R",encoding = "Latin1")
 source("scripts/getpoints.R")
 source("scripts/hyperlinks.R")
@@ -11,25 +13,19 @@ source("scripts/readgsheets.R",encoding = "Latin1")
 source("scripts/getdataframe.R")
 
 
-
+# construct server ----
 # server serves information to the user interface that is constructed in scripts/ui.R file
 server <- function(input, output, session) {
-  
 
-  
-
-  
   # url of gsheet which contains form answers
   dtf <- getDataFrame('https://docs.google.com/spreadsheets/d/1Dn96ArmKeIu-lnDSUHzAKnGcJv7Kjmqii_H-Y-zVd74/edit?usp=sharing')
- 
+  
+  # read in data to be plotted in app
   samplepoints <- getPoints("data/bias_samples.shp")
   roads <- getPoints("data/osm_roads_aoi_wgs84.shp")
   completes <- getCompletes(dtf)
 
-
-  
-
-  
+  # assign colors to markers
   getColor <- function(samples,samplepoints) {
     sapply(samplepoints$ID, function(ID) {
       if(ID %in% completes){
@@ -42,7 +38,7 @@ server <- function(input, output, session) {
       })
   }
   
-  
+  # construct markers
   icons <- awesomeIcons(
     icon = 'square',
     iconColor = 'white',
@@ -50,9 +46,11 @@ server <- function(input, output, session) {
     markerColor = getColor(samples,samplepoints)
   )
   
+  # construct values for table
   totalpoints <- nrow(samplepoints)
   donepoints <- nrow(dtf)
   
+  # take inputs for sliders for sample time estimation
   sliderValues <- reactive({
     time <- input$sampletime
     groups <- input$teams
@@ -60,11 +58,11 @@ server <- function(input, output, session) {
     paste(floor(mins/60), " hours ", round(mins%%60), " minutes needed")
   })
   
+  # output estimated sampletime
   output$selected_var <- renderText(sliderValues())
   
   # Render background map for shiny app
   output$map <- renderLeaflet({
-    
     waterlinks <- createFormLinks(samplepoints)
     # Add default OpenStreetMap map tiles 52.0368481718756,6.64762982247062
     leaflet(data = waterlinks) %>% setView(lng = 6.647629, lat = 52.0368481, zoom = 13) %>%  
