@@ -15,7 +15,7 @@ plastics <- as.factor(plastics)
 
 
 
-qpal <- colorNumeric(palette = "YlOrRd", domain = NULL, na.color = NA, reverse = F, n=5)
+qpal <- colorNumeric(palette = "YlOrRd", domain = NULL, na.color = NA, reverse = F)
 legendpal <- c("#ffffb2","#fecc5c", "#fd8d3c", "#f03b20", "#bd0026")
 
 
@@ -25,10 +25,10 @@ m %>% addTiles()
 leaflet() %>% addProviderTiles(providers$OpenStreetMap.BlackAndWhite) %>%
   #Base groups
   addRasterImage(plastics, colors = qpal, opacity = 0.8, group = "plastics") %>%
-  addRasterImage(paper, colors = pal, opacity = 0.8, group = "paper") %>%
-  addRasterImage(organic, colors = pal, opacity = 0.8, group = "organic") %>%
-  addRasterImage(other, colors = pal, opacity = 0.8, group = "other") %>%
-  addRasterImage(cigarette, colors = pal, opacity = 0.8, group = "cigarette") %>%
+  addRasterImage(paper, colors = qpal, opacity = 0.8, group = "paper") %>%
+  addRasterImage(organic, colors = qpal, opacity = 0.8, group = "organic") %>%
+  addRasterImage(other, colors = qpal, opacity = 0.8, group = "other") %>%
+  addRasterImage(cigarette, colors = qpal, opacity = 0.8, group = "cigarette") %>%
   addLayersControl(
    baseGroups = c("plastics", "paper", "organic", "other", "cigarette"),
    options = layersControlOptions(collapsed = FALSE)) %>%
