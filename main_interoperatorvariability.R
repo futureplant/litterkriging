@@ -1,12 +1,16 @@
+### Analyze Interoperator Variability for Litter Observations ###
+
+# Date: June 2019
+
 rm(list = ls())
 
-# load libraries and scripts
+# Load libraries and scripts ------------------------------
 library(gsheet)
 library(dplyr)
 source('scripts/getdataframe.R')
 library(ggplot2)
 
-# retrieve data
+# Retrieve data ------------------------------
 sampledata <- getDataFrame('https://docs.google.com/spreadsheets/d/1MyHRcpDJX2iro6a_2nk0mOJBRSm_x0lpkLH04IoKJII/edit?usp=sharing')
 
 # filter out bias point
@@ -16,6 +20,7 @@ bias <- sampledata[sampledata$point_id >= 400,]
 bias <- select(bias,c(point_id, your_name, total))
 bias$total <- as.numeric(bias$total) # convert to numeric
 
+# Execution ------------------------------
 # create new dataframe
 df <- data.frame()
 
@@ -53,7 +58,7 @@ for (name in namelist){
   finaltable <- rbind(finaltable,personals)
 }
 
-# save Boxplot to png 
+# Save boxplot to png ------------------------------
 png("output/inter_operator_variability.png")
 p10 <- ggplot(finaltable, aes(x = name, y = error)) +
   geom_boxplot()
