@@ -18,7 +18,7 @@ library(sp)
 library(rgdal)
 library(rgeos)
 library(raster)
-
+source('scripts/create_samplingpoints_dataframe.R')
 
 # Import road networks and study area ------------------------------------
 roadnetwork <- readOGR(dsn = "data", layer = "osm_roads_groenlo")
@@ -38,14 +38,9 @@ plot(test_samples, add = T, col = 'red')
 ## KRIGING SAMPLING ## -----------------------------
 
 # Create a regular grid along road ------------------------------------
-sample_reg <- spsample(study_roadnetwork, n = 90, type = "regular")
+sample_reg <- create_samples_to_spatialDF(study_roadnetwork, numberpoints = 90, scheme = 'regular')
+
 length(sample_reg)
-
-id_df = as.data.frame((1:length(sample_reg)))
-id_df[1:length(sample_reg),] = as.numeric(id_df[1:length(sample_reg),])
-names(id_df) = 'ID'
-sample_reg <- SpatialPointsDataFrame(sample_reg, id_df)
-
 plot(study_roadnetwork) 
 plot(sample_reg, add = T, col = 'red')
 
@@ -84,13 +79,12 @@ writeOGR(sample_points_wgs84, 'output', layer = 'sample_points', driver = 'ESRI 
 
 
 ## VALIDATION SAMPLING ## -----------------------------
-validation_points <- spsample(study_roadnetwork, n = 50, type = "random")
-length(validation_points)
+validation_points <- create_samples_to_spatialDF(study_roadnetwork, numberpoints = 50, scheme = 'random')
 
-val_df = as.data.frame((1:length(validation_points)))
-val_df[1:31,] = as.numeric(val_df[1:31,])
-names(val_df) = 'ID'
-validation_points <- SpatialPointsDataFrame(validation_points, val_df)
+length(validation_points)
+plot(study_roadnetwork) 
+plot(sample_reg, add = T, col = 'red')
+plot(validation_points, add = T, col = 'blue')
 
 # Export validation random sampling points
 writeOGR(validation_points, 'output', layer = 'validation_points', driver = 'ESRI Shapefile')
@@ -102,15 +96,11 @@ roadnetwork_bias <- readOGR(dsn = "data", layer = "extra_roads_wgs84")
 plot(roadnetwork_bias)
 
 # Create random sampling points ----------------------------------------
-sample_bias <- spsample(roadnetwork, n = 11, type = "random")
+sample_bias <- create_samples_to_spatialDF(roadnetwork_bias, numberpoints = 11, scheme = 'random')
+
 length(sample_bias)
-
+plot(roadnetwork_bias)
 plot(sample_bias, add = T, col = 'red')
-
-id_df = as.data.frame((1:length(sample_bias)))
-id_df[1:nrow(id_df),] = as.numeric(id_df[1:nrow(id_df),])
-names(id_df) = 'ID'
-sample_bias <- SpatialPointsDataFrame(sample_bias, id_df)
 
 
 # Export points for personal bias investigation
