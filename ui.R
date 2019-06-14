@@ -1,3 +1,7 @@
+# User Interface for fieldwork app
+
+# date: May 2019
+
 # load libraries ----
 library(shinydashboard)
 library(shiny)

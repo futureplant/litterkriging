@@ -1,4 +1,6 @@
-# Fieldwork app
+# main Fieldwork app server file
+
+# date: May 2019
 
 # load libraries ----
 library(shiny)
