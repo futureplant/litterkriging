@@ -14,9 +14,8 @@ source("scripts/getdataframe.R")
 
 
 # construct server ----
-# server serves information to the user interface that is constructed in scripts/ui.R file
+# server serves information to the user interface that is constructed in scripts/ui.R file ----
 server <- function(input, output, session) {
-
   # url of gsheet which contains form answers
   dtf <- getDataFrame('https://docs.google.com/spreadsheets/d/1Dn96ArmKeIu-lnDSUHzAKnGcJv7Kjmqii_H-Y-zVd74/edit?usp=sharing')
   
@@ -106,6 +105,7 @@ server <- function(input, output, session) {
   ))  
 }
 
+# start app ----
 shinyApp(ui, server)
 
 
