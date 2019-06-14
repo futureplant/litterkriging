@@ -68,7 +68,7 @@ hist(sampledata$organic_waste, breaks = c(0,1,2,3,4,5,6,7,8,9,10,20))
 hist(sampledata$cigarette_butts, breaks = c(0,1,2,3,4,5,6,7,8,9,10,20))
 hist(sampledata$other, breaks = c(0,1,2,3,4,5,6,7,8,9,10,20))
 
-# Prepare indicator kriging variables for each category -------------------------------
+# Prepare indicator kriging variables for each litter category -------------------------------
 # total, plastic, paper, organic, cigarettes, other
 
    # total
@@ -302,8 +302,6 @@ final_organic <- mask(max_layer_organic, roadnetwork)
 final_cigarette <- mask(max_layer_cigarette, roadnetwork)
 final_other <- mask(max_layer_other, roadnetwork)
 
-
-
 # Visualize 
 plot(final_total)
 plot(final_plastics)
@@ -313,7 +311,7 @@ plot(final_cigarette)
 plot(final_other)
 
 
-# Export litter maps as geotiff -------------------------------
+# Export litter density maps as geotiff -------------------------------
 writeRaster(final_total, 'output/total_indicatorkriging', format = 'GTiff', overwrite=T)
 writeRaster(final_plastics, 'output/plastics_indicatorkriging', format = 'GTiff', overwrite=T)
 writeRaster(final_paper, 'output/paper_indicatorkriging', format = 'GTiff', overwrite=T)
